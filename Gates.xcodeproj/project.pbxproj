@@ -79,7 +79,6 @@
 		A50EBBCC1577816B00BD9C60 /* APSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A50EBBC71577816B00BD9C60 /* APSplitViewController.m */; };
 		A50EBBCD1577816B00BD9C60 /* APTabBarControllerForSplitController.m in Sources */ = {isa = PBXBuildFile; fileRef = A50EBBC91577816B00BD9C60 /* APTabBarControllerForSplitController.m */; };
 		A50EBBD01577819300BD9C60 /* split-divider.png in Resources */ = {isa = PBXBuildFile; fileRef = A50EBBCF1577819300BD9C60 /* split-divider.png */; };
-		A50EBBD41577856D00BD9C60 /* GTSProjectController.m in Sources */ = {isa = PBXBuildFile; fileRef = A50EBBD31577856D00BD9C60 /* GTSProjectController.m */; };
 		A54C87F71577CF84002B1116 /* GTSMainSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A54C87F61577CF84002B1116 /* GTSMainSplitViewController.m */; };
 		A54C87FB1577DBBF002B1116 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A54C87F91577DBBE002B1116 /* Localizable.strings */; };
 /* End PBXBuildFile section */
@@ -226,8 +225,6 @@
 		A50EBBC81577816B00BD9C60 /* APTabBarControllerForSplitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APTabBarControllerForSplitController.h; path = external/split/APTabBarControllerForSplitController.h; sourceTree = "<group>"; };
 		A50EBBC91577816B00BD9C60 /* APTabBarControllerForSplitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APTabBarControllerForSplitController.m; path = external/split/APTabBarControllerForSplitController.m; sourceTree = "<group>"; };
 		A50EBBCF1577819300BD9C60 /* split-divider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "split-divider.png"; path = "external/split/resources/split-divider.png"; sourceTree = "<group>"; };
-		A50EBBD21577856D00BD9C60 /* GTSProjectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSProjectController.h; sourceTree = "<group>"; };
-		A50EBBD31577856D00BD9C60 /* GTSProjectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSProjectController.m; sourceTree = "<group>"; };
 		A50EBBD91577921100BD9C60 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ru; path = ru.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		A54C87F51577CF84002B1116 /* GTSMainSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSMainSplitViewController.h; sourceTree = "<group>"; };
 		A54C87F61577CF84002B1116 /* GTSMainSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSMainSplitViewController.m; sourceTree = "<group>"; };
@@ -285,6 +282,7 @@
 		A50EBAE815764C1C00BD9C60 /* Gates */ = {
 			isa = PBXGroup;
 			children = (
+				A50EBBD11577854000BD9C60 /* Controllers */,
 				A50EBB1215777D8600BD9C60 /* External */,
 				A50EBAF115764C1C00BD9C60 /* GTSAppDelegate.h */,
 				A50EBAF215764C1C00BD9C60 /* GTSAppDelegate.m */,
@@ -295,8 +293,6 @@
 				A50EBAFE15764C1C00BD9C60 /* GTSDetailViewController.m */,
 				A50EBAF715764C1C00BD9C60 /* Gates.xcdatamodeld */,
 				A50EBAE915764C1C00BD9C60 /* Supporting Files */,
-				A54C87F51577CF84002B1116 /* GTSMainSplitViewController.h */,
-				A54C87F61577CF84002B1116 /* GTSMainSplitViewController.m */,
 			);
 			path = Gates;
 			sourceTree = "<group>";
@@ -316,7 +312,6 @@
 		A50EBB1215777D8600BD9C60 /* External */ = {
 			isa = PBXGroup;
 			children = (
-				A50EBBD11577854000BD9C60 /* Controllers */,
 				A50EBBC2157780E200BD9C60 /* SplitView */,
 				A50EBB1315777D8F00BD9C60 /* QuickDialog */,
 			);
@@ -470,8 +465,8 @@
 		A50EBBD11577854000BD9C60 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A50EBBD21577856D00BD9C60 /* GTSProjectController.h */,
-				A50EBBD31577856D00BD9C60 /* GTSProjectController.m */,
+				A54C87F51577CF84002B1116 /* GTSMainSplitViewController.h */,
+				A54C87F61577CF84002B1116 /* GTSMainSplitViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -606,7 +601,6 @@
 				A50EBBCB1577816B00BD9C60 /* APNavigationControllerForSplitController.m in Sources */,
 				A50EBBCC1577816B00BD9C60 /* APSplitViewController.m in Sources */,
 				A50EBBCD1577816B00BD9C60 /* APTabBarControllerForSplitController.m in Sources */,
-				A50EBBD41577856D00BD9C60 /* GTSProjectController.m in Sources */,
 				A54C87F71577CF84002B1116 /* GTSMainSplitViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
