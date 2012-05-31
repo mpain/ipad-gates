@@ -20,6 +20,7 @@
 @synthesize storyboard = _storyboard;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+	NSLog(@"Log system is started: %@", NSLocalizedString(@"TEST", @"a test string"));
 	_storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:[NSBundle mainBundle]];
 	self.window.rootViewController = [self.storyboard instantiateInitialViewController];
 	

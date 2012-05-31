@@ -81,6 +81,7 @@
 		A50EBBD01577819300BD9C60 /* split-divider.png in Resources */ = {isa = PBXBuildFile; fileRef = A50EBBCF1577819300BD9C60 /* split-divider.png */; };
 		A50EBBD41577856D00BD9C60 /* GTSProjectController.m in Sources */ = {isa = PBXBuildFile; fileRef = A50EBBD31577856D00BD9C60 /* GTSProjectController.m */; };
 		A54C87F71577CF84002B1116 /* GTSMainSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A54C87F61577CF84002B1116 /* GTSMainSplitViewController.m */; };
+		A54C87FB1577DBBF002B1116 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A54C87F91577DBBE002B1116 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -230,6 +231,8 @@
 		A50EBBD91577921100BD9C60 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ru; path = ru.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		A54C87F51577CF84002B1116 /* GTSMainSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSMainSplitViewController.h; sourceTree = "<group>"; };
 		A54C87F61577CF84002B1116 /* GTSMainSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSMainSplitViewController.m; sourceTree = "<group>"; };
+		A54C87FA1577DBBE002B1116 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A54C87FC1577DBE4002B1116 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,6 +308,7 @@
 				A50EBAEB15764C1C00BD9C60 /* InfoPlist.strings */,
 				A50EBAEE15764C1C00BD9C60 /* main.m */,
 				A50EBAF015764C1C00BD9C60 /* Gates-Prefix.pch */,
+				A54C87F91577DBBE002B1116 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -528,6 +532,7 @@
 				A50EBAED15764C1C00BD9C60 /* InfoPlist.strings in Resources */,
 				A50EBAF615764C1C00BD9C60 /* MainStoryboard.storyboard in Resources */,
 				A50EBBD01577819300BD9C60 /* split-divider.png in Resources */,
+				A54C87FB1577DBBF002B1116 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,6 +629,15 @@
 				A50EBBD91577921100BD9C60 /* ru */,
 			);
 			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		A54C87F91577DBBE002B1116 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A54C87FA1577DBBE002B1116 /* en */,
+				A54C87FC1577DBE4002B1116 /* ru */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
