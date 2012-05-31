@@ -1,11 +1,3 @@
-//
-//  GTSAppDelegate.h
-//  Gates
-//
-//  Created by Sergey Samoylov on 5/30/12.
-//  Copyright (c) 2012 IT Territory. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
 
 @interface GTSAppDelegate : UIResponder <UIApplicationDelegate>
@@ -15,6 +7,7 @@
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+@property (readonly, strong, nonatomic) UIStoryboard *storyboard;
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
