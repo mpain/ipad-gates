@@ -14,10 +14,7 @@
 		A50EBAED15764C1C00BD9C60 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A50EBAEB15764C1C00BD9C60 /* InfoPlist.strings */; };
 		A50EBAEF15764C1C00BD9C60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A50EBAEE15764C1C00BD9C60 /* main.m */; };
 		A50EBAF315764C1C00BD9C60 /* GTSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A50EBAF215764C1C00BD9C60 /* GTSAppDelegate.m */; };
-		A50EBAF615764C1C00BD9C60 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50EBAF415764C1C00BD9C60 /* MainStoryboard.storyboard */; };
 		A50EBAF915764C1C00BD9C60 /* Gates.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A50EBAF715764C1C00BD9C60 /* Gates.xcdatamodeld */; };
-		A50EBAFC15764C1C00BD9C60 /* GTSMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A50EBAFB15764C1C00BD9C60 /* GTSMasterViewController.m */; };
-		A50EBAFF15764C1C00BD9C60 /* GTSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A50EBAFE15764C1C00BD9C60 /* GTSDetailViewController.m */; };
 		A50EBB8715777DBA00BD9C60 /* DOAutocompleteTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A50EBB1515777DBA00BD9C60 /* DOAutocompleteTextField.m */; };
 		A50EBB8815777DBA00BD9C60 /* NSMutableArray+IMSExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A50EBB1715777DBA00BD9C60 /* NSMutableArray+IMSExtensions.m */; };
 		A50EBB8915777DBA00BD9C60 /* NSMutableArray+MoveObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A50EBB1915777DBA00BD9C60 /* NSMutableArray+MoveObject.m */; };
@@ -81,6 +78,10 @@
 		A50EBBD01577819300BD9C60 /* split-divider.png in Resources */ = {isa = PBXBuildFile; fileRef = A50EBBCF1577819300BD9C60 /* split-divider.png */; };
 		A54C87F71577CF84002B1116 /* GTSMainSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A54C87F61577CF84002B1116 /* GTSMainSplitViewController.m */; };
 		A54C87FB1577DBBF002B1116 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A54C87F91577DBBE002B1116 /* Localizable.strings */; };
+		A54C87FF1578A597002B1116 /* ProjectForm.json in Resources */ = {isa = PBXBuildFile; fileRef = A54C87FE1578A597002B1116 /* ProjectForm.json */; };
+		A56D6FE81578B96F00D01627 /* GTSProjectDialogController.m in Sources */ = {isa = PBXBuildFile; fileRef = A56D6FE71578B96F00D01627 /* GTSProjectDialogController.m */; };
+		A56D6FEA1578DFF500D01627 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56D6FEB1578DFF500D01627 /* MainStoryboard.storyboard */; };
+		A56D6FF115790EE000D01627 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56D6FF015790EDE00D01627 /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,12 +96,7 @@
 		A50EBAF015764C1C00BD9C60 /* Gates-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gates-Prefix.pch"; sourceTree = "<group>"; };
 		A50EBAF115764C1C00BD9C60 /* GTSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTSAppDelegate.h; sourceTree = "<group>"; };
 		A50EBAF215764C1C00BD9C60 /* GTSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTSAppDelegate.m; sourceTree = "<group>"; };
-		A50EBAF515764C1C00BD9C60 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		A50EBAF815764C1C00BD9C60 /* Gates.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gates.xcdatamodel; sourceTree = "<group>"; };
-		A50EBAFA15764C1C00BD9C60 /* GTSMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTSMasterViewController.h; sourceTree = "<group>"; };
-		A50EBAFB15764C1C00BD9C60 /* GTSMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTSMasterViewController.m; sourceTree = "<group>"; };
-		A50EBAFD15764C1C00BD9C60 /* GTSDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTSDetailViewController.h; sourceTree = "<group>"; };
-		A50EBAFE15764C1C00BD9C60 /* GTSDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTSDetailViewController.m; sourceTree = "<group>"; };
 		A50EBB1415777DBA00BD9C60 /* DOAutocompleteTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DOAutocompleteTextField.h; path = external/quickdialog/DOAutocompleteTextField.h; sourceTree = "<group>"; };
 		A50EBB1515777DBA00BD9C60 /* DOAutocompleteTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DOAutocompleteTextField.m; path = external/quickdialog/DOAutocompleteTextField.m; sourceTree = "<group>"; };
 		A50EBB1615777DBA00BD9C60 /* NSMutableArray+IMSExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+IMSExtensions.h"; path = "external/quickdialog/NSMutableArray+IMSExtensions.h"; sourceTree = "<group>"; };
@@ -225,11 +221,15 @@
 		A50EBBC81577816B00BD9C60 /* APTabBarControllerForSplitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APTabBarControllerForSplitController.h; path = external/split/APTabBarControllerForSplitController.h; sourceTree = "<group>"; };
 		A50EBBC91577816B00BD9C60 /* APTabBarControllerForSplitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APTabBarControllerForSplitController.m; path = external/split/APTabBarControllerForSplitController.m; sourceTree = "<group>"; };
 		A50EBBCF1577819300BD9C60 /* split-divider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "split-divider.png"; path = "external/split/resources/split-divider.png"; sourceTree = "<group>"; };
-		A50EBBD91577921100BD9C60 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ru; path = ru.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		A54C87F51577CF84002B1116 /* GTSMainSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSMainSplitViewController.h; sourceTree = "<group>"; };
 		A54C87F61577CF84002B1116 /* GTSMainSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSMainSplitViewController.m; sourceTree = "<group>"; };
 		A54C87FA1577DBBE002B1116 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A54C87FC1577DBE4002B1116 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A54C87FE1578A597002B1116 /* ProjectForm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ProjectForm.json; path = resources/ProjectForm.json; sourceTree = "<group>"; };
+		A56D6FE61578B96F00D01627 /* GTSProjectDialogController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSProjectDialogController.h; sourceTree = "<group>"; };
+		A56D6FE71578B96F00D01627 /* GTSProjectDialogController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSProjectDialogController.m; sourceTree = "<group>"; };
+		A56D6FEB1578DFF500D01627 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		A56D6FF015790EDE00D01627 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +237,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A56D6FF115790EE000D01627 /* MobileCoreServices.framework in Frameworks */,
 				A50EBBC11577805E00BD9C60 /* CoreLocation.framework in Frameworks */,
 				A50EBBBF1577801A00BD9C60 /* MapKit.framework in Frameworks */,
 				A50EBAE115764C1C00BD9C60 /* UIKit.framework in Frameworks */,
@@ -269,6 +270,7 @@
 		A50EBADF15764C1C00BD9C60 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A56D6FF015790EDE00D01627 /* MobileCoreServices.framework */,
 				A50EBBC01577805E00BD9C60 /* CoreLocation.framework */,
 				A50EBBBE1577801A00BD9C60 /* MapKit.framework */,
 				A50EBAE015764C1C00BD9C60 /* UIKit.framework */,
@@ -286,12 +288,9 @@
 				A50EBB1215777D8600BD9C60 /* External */,
 				A50EBAF115764C1C00BD9C60 /* GTSAppDelegate.h */,
 				A50EBAF215764C1C00BD9C60 /* GTSAppDelegate.m */,
-				A50EBAF415764C1C00BD9C60 /* MainStoryboard.storyboard */,
-				A50EBAFA15764C1C00BD9C60 /* GTSMasterViewController.h */,
-				A50EBAFB15764C1C00BD9C60 /* GTSMasterViewController.m */,
-				A50EBAFD15764C1C00BD9C60 /* GTSDetailViewController.h */,
-				A50EBAFE15764C1C00BD9C60 /* GTSDetailViewController.m */,
+				A56D6FEB1578DFF500D01627 /* MainStoryboard.storyboard */,
 				A50EBAF715764C1C00BD9C60 /* Gates.xcdatamodeld */,
+				A54C87FD1578A55A002B1116 /* Resources */,
 				A50EBAE915764C1C00BD9C60 /* Supporting Files */,
 			);
 			path = Gates;
@@ -467,8 +466,18 @@
 			children = (
 				A54C87F51577CF84002B1116 /* GTSMainSplitViewController.h */,
 				A54C87F61577CF84002B1116 /* GTSMainSplitViewController.m */,
+				A56D6FE61578B96F00D01627 /* GTSProjectDialogController.h */,
+				A56D6FE71578B96F00D01627 /* GTSProjectDialogController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A54C87FD1578A55A002B1116 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A54C87FE1578A597002B1116 /* ProjectForm.json */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -525,9 +534,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A50EBAED15764C1C00BD9C60 /* InfoPlist.strings in Resources */,
-				A50EBAF615764C1C00BD9C60 /* MainStoryboard.storyboard in Resources */,
+				A56D6FEA1578DFF500D01627 /* MainStoryboard.storyboard in Resources */,
 				A50EBBD01577819300BD9C60 /* split-divider.png in Resources */,
 				A54C87FB1577DBBF002B1116 /* Localizable.strings in Resources */,
+				A54C87FF1578A597002B1116 /* ProjectForm.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,8 +551,6 @@
 				A50EBAEF15764C1C00BD9C60 /* main.m in Sources */,
 				A50EBAF315764C1C00BD9C60 /* GTSAppDelegate.m in Sources */,
 				A50EBAF915764C1C00BD9C60 /* Gates.xcdatamodeld in Sources */,
-				A50EBAFC15764C1C00BD9C60 /* GTSMasterViewController.m in Sources */,
-				A50EBAFF15764C1C00BD9C60 /* GTSDetailViewController.m in Sources */,
 				A50EBB8715777DBA00BD9C60 /* DOAutocompleteTextField.m in Sources */,
 				A50EBB8815777DBA00BD9C60 /* NSMutableArray+IMSExtensions.m in Sources */,
 				A50EBB8915777DBA00BD9C60 /* NSMutableArray+MoveObject.m in Sources */,
@@ -602,6 +610,7 @@
 				A50EBBCC1577816B00BD9C60 /* APSplitViewController.m in Sources */,
 				A50EBBCD1577816B00BD9C60 /* APTabBarControllerForSplitController.m in Sources */,
 				A54C87F71577CF84002B1116 /* GTSMainSplitViewController.m in Sources */,
+				A56D6FE81578B96F00D01627 /* GTSProjectDialogController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,15 +623,6 @@
 				A50EBAEC15764C1C00BD9C60 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		A50EBAF415764C1C00BD9C60 /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A50EBAF515764C1C00BD9C60 /* en */,
-				A50EBBD91577921100BD9C60 /* ru */,
-			);
-			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 		A54C87F91577DBBE002B1116 /* Localizable.strings */ = {

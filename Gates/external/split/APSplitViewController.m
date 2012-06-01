@@ -9,7 +9,7 @@
 #import "APSplitViewController.h"
 
 #define constDividerWidth 1.0f
-#define constMasterWidth 320.0f
+#define constMasterWidth 250.0f
 #define constDetailStartPoint (constMasterWidth+constDividerWidth)
 
 static float koefficient = 0.0f; // Need to fix a bug with 20px near the statusbar

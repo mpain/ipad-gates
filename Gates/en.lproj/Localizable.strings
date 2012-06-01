@@ -1,2 +1,14 @@
 "TEST" = "Test!!!";
 "TAB_BAR_PROJECTS" = "Projects";
+
+"PROJECT_SECTION_FURNISHING" = "Order type";
+"PROJECT_FURNISH_TYPE" = "Order type";
+"PROJECT_FURNISH_TYPE_FULL" = "Full";
+"PROJECT_FURNISH_TYPE_GATES" = "Only gates";
+"PROJECT_FURNISH_TYPE_GUIDES" = "Only guides";
+
+"PROJECT_SECTION_DIMENTIONS" = "Gates dimentions";
+"PROJECT_GATES_WIDTH" = "Width (W), mm";
+"PROJECT_GATES_HEIGHT" = "Height (H), mm";
+"PROJECT_GATES_SURFACE" = "Gates surface, m2";
+

@@ -53,32 +53,16 @@ NSString * const QPickerTableViewCellIdentifier = @"QPickerTableViewCell";
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
-    [_pickerView sizeToFit];
-    
-	if (UI_USER_INTERFACE_IDIOM() != UIUserInterfaceIdiomPad) {
-		_textField.inputView = _pickerView;
+	_textField.inputView = _pickerView;
 
-	} else {
-		QPickerViewController *pickerViewController = [[QPickerViewController alloc] initWithPickerView:_pickerView];
-		self.popoverController = [[UIPopoverController alloc] initWithContentViewController:pickerViewController];
-		CGRect popoverRect = [self.superview convertRect:[textField frame] fromView:self];
-		
-		popoverRect.origin.x = MAX(0, (popoverRect.origin.x + popoverRect.size.width) - POPOVER_RECT_WIDTH);
-		popoverRect.size.width = POPOVER_RECT_WIDTH;
-		
-		self.popoverController.popoverContentSize = _pickerView.bounds.size;
-		[self.popoverController presentPopoverFromRect:popoverRect inView:self.superview permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
-		
-		[_textField resignFirstResponder];
-	}
-    
+    [_pickerView layoutSubviews];
+	_pickerView.showsSelectionIndicator = YES;
+	
     if (self.pickerElement.value != nil) {
         [self setPickerViewValue:self.pickerElement.value];
     }
     
-	if (UI_USER_INTERFACE_IDIOM() != UIUserInterfaceIdiomPad) {
-		[super textFieldDidBeginEditing:textField];
-	}
+	[super textFieldDidBeginEditing:textField];
     self.selected = YES;
 }
 
@@ -86,11 +70,7 @@ NSString * const QPickerTableViewCellIdentifier = @"QPickerTableViewCell";
 {
     [self prepareForElement:element inTableView:tableView];
     
-    _pickerView = [[UIPickerView alloc] init];
-	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-		_pickerView.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
-	} 
-    _pickerView.showsSelectionIndicator = YES;
+    _pickerView = [[UIPickerView alloc] initWithFrame:CGRectZero];
     _pickerView.dataSource = self;
     _pickerView.delegate = self;
 	
@@ -100,14 +80,16 @@ NSString * const QPickerTableViewCellIdentifier = @"QPickerTableViewCell";
 - (void)prepareForElement:(QEntryElement *)element inTableView:(QuickDialogTableView *)tableView
 {
     [super prepareForElement:element inTableView:tableView];
-    
+    self.labelingPolicy = element.labelingPolicy;
+	
     QPickerElement *pickerElement = (QPickerElement *)element;
 
     if ([pickerElement.valueParser respondsToSelector:@selector(presentationOfObject:)]) {
         self.detailTextLabel.text = [pickerElement.valueParser presentationOfObject:pickerElement.value];
         _textField.text = [pickerElement.valueParser presentationOfObject:pickerElement.value];
     } else {
-        self.detailTextLabel.text = [pickerElement.value description];
+		NSString *val = [pickerElement.value description];
+        self.detailTextLabel.text = (val) ? val : @"NOT SET";
         _textField.text = [pickerElement.value description];
     }
     
@@ -128,7 +110,7 @@ NSString * const QPickerTableViewCellIdentifier = @"QPickerTableViewCell";
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
-    return [[[self.pickerElement.items objectAtIndex:(NSUInteger) component] objectAtIndex:(NSUInteger) row] description];
+    return NSLocalizedString([[[self.pickerElement.items objectAtIndex:(NSUInteger) component] objectAtIndex:(NSUInteger) row] description], nil);
 }
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component

@@ -1,2 +1,17 @@
 "TEST" = "Тест!!!";
 "TAB_BAR_PROJECTS" = "Проекты";
+
+"PROJECT_SECTION_FURNISHING" = "Комплектация заказа";
+"PROJECT_FURNISH_TYPE" = "Комплектация";
+"PROJECT_FURNISH_TYPE_FULL" = "Полная";
+"PROJECT_FURNISH_TYPE_GATES" = "Только щит ворот";
+"PROJECT_FURNISH_TYPE_GUIDES" = "Только направляющие ворот";
+
+"PROJECT_SECTION_DIMENTIONS" = "Размеры проема";
+"PROJECT_GATES_WIDTH" = "Ширина (Ш), мм";
+"PROJECT_GATES_HEIGHT" = "Высота (В), мм";
+"PROJECT_GATES_SURFACE" = "Площадь проема, м2";
+
+"Previous" = "Назад";
+"Next" = "Далее";
+"Done" = "Заврешить";

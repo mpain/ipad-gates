@@ -1,0 +1,33 @@
+{
+	"grouped": false,
+	"title": "Sample Controls",
+	"sections":
+	[
+		{
+			"title" : "PROJECT_SECTION_FURNISHING", 
+			"elements" :
+			[
+			 {"type" : "QPickerElement", "title" : "PROJECT_FURNISH_TYPE", "items" : [["PROJECT_FURNISH_TYPE_FULL", "PROJECT_FURNISH_TYPE_GATES", "PROJECT_FURNISH_TYPE_GUIDES"]], "labelingPolicy" : 1}
+			]
+		},
+		{
+			"title" : "PROJECT_SECTION_DIMENTIONS", 
+			"elements" :
+			[
+				{"type" : "QDecimalElement", "title" : "PROJECT_GATES_WIDTH"},
+				{"type" : "QDecimalElement", "title" : "PROJECT_GATES_HEIGHT"},
+				{"type" : "QLabelElement", "title" : "PROJECT_GATES_SURFACE"},
+			 
+			]
+		},
+		{
+			"title" : "PROJECT_SECTION_MAIN", 
+			"elements" :
+			[
+				{"type" : "QDecimalElement", "title" : "PROJECT_GATE_WIDTH"},
+				{"type" : "QDecimalElement", "title" : "PROJECT_GATE_HEIGHT"},
+	  
+			]
+		}
+	]
+}

@@ -8,7 +8,6 @@
 
 #import "GTSAppDelegate.h"
 
-#import "GTSMasterViewController.h"
 #import "APSplitViewController.h"
 
 @implementation GTSAppDelegate

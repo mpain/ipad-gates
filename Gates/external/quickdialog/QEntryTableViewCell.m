@@ -105,8 +105,8 @@
     _quickformTableView = tableView;
     _entryElement = element;
     _textField.text = _entryElement.textValue;
-    _textField.placeholder = _entryElement.placeholder;
-
+    _textField.placeholder = NSLocalizedString(_entryElement.placeholder, @"A placeholder");
+	_textField.textAlignment = UITextAlignmentRight;
     _textField.autocapitalizationType = _entryElement.autocapitalizationType;
     _textField.autocorrectionType = _entryElement.autocorrectionType;
     _textField.keyboardType = _entryElement.keyboardType;
@@ -146,7 +146,7 @@
 - (void)prepareForReuse {
     _quickformTableView = nil;
     _entryElement = nil;
-    _textField.textAlignment = UITextAlignmentLeft;
+    _textField.textAlignment = UITextAlignmentRight;
 }
 
 - (void)textFieldEditingChanged:(UITextField *)textFieldEditingChanged {
