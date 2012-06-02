@@ -1,5 +1,5 @@
 #import "QuickDialogController.h"
 
-@interface GTSProjectDialogController : QuickDialogController<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+@interface GTSProjectDialogController : UITableViewController<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
 @end

@@ -8,20 +8,30 @@
 
 @implementation GTSProjectDialogController
 
-- (void)loadFormFromJson {
-	self.root = [[QRootElement alloc] initWithJSONFile:@"ProjectForm"];
-	self.resizeWhenKeyboardPresented = YES;
+- (void)awakeFromNib {
+	
 }
 
-- (void)viewDidLoad {
-	[super viewDidLoad];
-	[self loadFormFromJson];
+- (void)createNavigationBarButtons {
+	UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addMoreItem)];
+	
+	UIBarButtonItem *space = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+	space.width = 10;
+	
+	UIBarButtonItem *removeButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemTrash target:self action:@selector(removeItem)];
+	
+	UIBarButtonItem *space2 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+	space2.width = 10;
+	
+	UIBarButtonItem *refreshButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(refreshItem)];
+	
+	self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:addButton, space, removeButton, space2, refreshButton, nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated { 
 	
     [super viewWillAppear:animated]; 
-	
+	[self createNavigationBarButtons];
     [self.navigationController setToolbarHidden:NO animated:YES]; 
 	
 	UIBarButtonItem *fixedSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
