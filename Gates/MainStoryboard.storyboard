@@ -61,7 +61,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="GTSNumberCell" id="M2Z-f6-Shm" userLabel="Number Cell" customClass="GTSFormTextFieldCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="GTSNumberCellIdentifier" id="M2Z-f6-Shm" userLabel="GTSNumberCellIdentifier" customClass="GTSNumberCell">
                                 <rect key="frame" x="0.0" y="22" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -81,6 +81,9 @@
                                             <color key="textColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="M2Z-f6-Shm" id="z4Y-vY-opC"/>
+                                            </connections>
                                         </textField>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eVa-6p-fRZ">
                                             <rect key="frame" x="716" y="7" width="29" height="29"/>
@@ -99,9 +102,8 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <outlet property="buttonCalc" destination="eVa-6p-fRZ" id="ACX-IW-tby"/>
                                     <outlet property="label" destination="0M8-oU-v5N" id="hbP-q1-IeC"/>
-                                    <outlet property="textField" destination="8If-dU-xFQ" id="0MM-If-rni"/>
+                                    <outlet property="textValue" destination="8If-dU-xFQ" id="zxC-jg-hPC"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="GTSSelectCell" id="rBx-9z-Pti">
@@ -129,7 +131,7 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="GTSLabelCell" id="LyV-yA-3Ev">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="GTSLabelInfoCellIdentifier" id="LyV-yA-3Ev" customClass="GTSLabelInfoCell">
                                 <rect key="frame" x="0.0" y="110" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -153,6 +155,10 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <connections>
+                                    <outlet property="label" destination="FgI-xk-URG" id="cYD-20-5P1"/>
+                                    <outlet property="labelInfo" destination="bXV-gt-xXP" id="OJ8-R9-Lde"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                     </tableView>
@@ -179,34 +185,6 @@
             <point key="canvasLocation" x="-800" y="-915"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="APSplitViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/APSplitViewController.h"/>
-        </class>
-        <class className="APTabBarControllerForSplitController" superclassName="UITabBarController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/APTabBarControllerForSplitController.h"/>
-        </class>
-        <class className="GTSFormCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GTSFormCell.h"/>
-        </class>
-        <class className="GTSFormTableView" superclassName="UITableView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GTSFormTableView.h"/>
-        </class>
-        <class className="GTSFormTextFieldCell" superclassName="GTSFormCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GTSFormTextFieldCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="buttonCalc" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="label" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="textField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="GTSMainSplitViewController" superclassName="APSplitViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GTSMainSplitViewController.h"/>
-        </class>
-        <class className="GTSProjectDialogController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GTSProjectDialogController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

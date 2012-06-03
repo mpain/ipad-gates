@@ -2,26 +2,27 @@
 #import "GTSRowElement.h"
 
 @implementation GTSSection {
-	__strong NSMutableArray *sectionElements;
 }
 
 @synthesize title;
+@synthesize form;
+@synthesize elements;
 
 - (id)init {
 	self = [super init];
 	if (self) {
-		sectionElements = [NSMutableArray array];
+		self.elements = [NSMutableArray array];
 	}
 	return self;
 }
 
 - (NSInteger) elementsCount {
-	return [sectionElements count];
+	return [elements count];
 }
 
-- (NSInteger) visibleElementCount {
+- (NSInteger) visibleElementsCount {
 	__block NSInteger visibleCount = 0;
-	[sectionElements enumerateObjectsUsingBlock:^(id object, NSUInteger idx, BOOL *stop) {
+	[self.elements enumerateObjectsUsingBlock:^(id object, NSUInteger idx, BOOL *stop) {
 		GTSRowElement *current = (GTSRowElement *)object;
 		if (!current.hidden) {
 			visibleCount++;
@@ -32,7 +33,8 @@
 }
 
 - (void)addElement:(GTSRowElement *)element {
-	[sectionElements addObject:element];
+    element.section = self;
+	[self.elements addObject:element];
 }
 
 @end

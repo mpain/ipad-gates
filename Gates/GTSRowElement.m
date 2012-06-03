@@ -4,12 +4,17 @@
 
 @implementation GTSRowElement
 
+@synthesize section;
+@synthesize delegate;
+
 - (NSString *)cellReusableIdentifier {
 	return nil;
 }
 
 - (GTSFormCell *)getCellForTableView:(GTSFormTableView *)tableView {
-	return [tableView dequeueReusableCellWithIdentifier:[self cellReusableIdentifier]];
+	GTSFormCell *cell = [tableView dequeueReusableCellWithIdentifier:[self cellReusableIdentifier]];
+    
+    return cell;
 }
 
 @end

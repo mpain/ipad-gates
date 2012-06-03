@@ -1,24 +1,28 @@
 #import "GTSForm.h"
-
+#import "GTSSection.h"
 
 
 @implementation GTSForm {
-	__strong NSMutableArray *sections;
+	
 }
+
+@synthesize sections;
 
 - (id)init {
 	self = [super init];
 	if (self) {
-		sections = [NSMutableArray array];
+		self.sections = [NSMutableArray array];
 	}
 	return self;
 }
 
 - (void)addSection:(GTSSection *)section {
-	[sections addObject:section];
+    section.form = self;
+	[self.sections addObject:section];
 }
 
 - (NSInteger)sectionsCount {
-	return [sections count];
+	return [self.sections count];
 }
+
 @end

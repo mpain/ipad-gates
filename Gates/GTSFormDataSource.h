@@ -1,8 +1,10 @@
 #import <Foundation/Foundation.h>
 #import "GTSFormTableViewBaseDelegate.h"
 
-@class GTSFormTableView;
+@class GTSForm;
 
 @interface GTSFormDataSource : GTSFormTableViewBaseDelegate<UITableViewDataSource>
+
+@property (nonatomic, readonly, strong) GTSForm *form;
 
 @end

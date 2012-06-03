@@ -2,6 +2,8 @@
 
 @class GTSFormCell;
 @class GTSFormTableView;
+@class GTSSection;
+@protocol GTSElementDelegate;
 
 @protocol GTSRowDelegate <NSObject>
 @required
@@ -10,6 +12,9 @@
 @end
 
 @interface GTSRowElement : GTSElement<GTSRowDelegate>
+
+@property (nonatomic, weak) GTSSection *section;
+@property (nonatomic, weak) id<GTSElementDelegate> delegate;
 
 @end
 
