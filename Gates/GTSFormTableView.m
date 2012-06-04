@@ -9,8 +9,8 @@
     id <UITableViewDelegate> formDelegate;
 }
 
-- (void)awakeFromNib {
-	formDataSource = [GTSFormDataSource new];
+- (void)awakeFromNib {	
+	formDataSource = [[GTSFormDataSource alloc] initWithTableView:self];
 	self.dataSource = formDataSource;
 	
 	formDelegate = [GTSFormTableViewDelegate new];

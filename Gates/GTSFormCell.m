@@ -2,5 +2,7 @@
 
 @implementation GTSFormCell
 
+- (void)updateCellFromElement {
+}
 
 @end

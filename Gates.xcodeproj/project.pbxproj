@@ -82,6 +82,21 @@
 		A54C87F71577CF84002B1116 /* GTSMainSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A54C87F61577CF84002B1116 /* GTSMainSplitViewController.m */; };
 		A54C87FB1577DBBF002B1116 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A54C87F91577DBBE002B1116 /* Localizable.strings */; };
 		A54C87FF1578A597002B1116 /* ProjectForm.json in Resources */ = {isa = PBXBuildFile; fileRef = A54C87FE1578A597002B1116 /* ProjectForm.json */; };
+		A55C7A08157CA41A000D834F /* GTSFormatters.m in Sources */ = {isa = PBXBuildFile; fileRef = A55C7A07157CA41A000D834F /* GTSFormatters.m */; };
+		A55C7A18157CA762000D834F /* GMGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = A55C7A0E157CA762000D834F /* GMGridView.m */; };
+		A55C7A19157CA762000D834F /* GMGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A55C7A10157CA762000D834F /* GMGridViewCell.m */; };
+		A55C7A1A157CA762000D834F /* GMGridViewLayoutStrategies.m in Sources */ = {isa = PBXBuildFile; fileRef = A55C7A13157CA762000D834F /* GMGridViewLayoutStrategies.m */; };
+		A55C7A1B157CA762000D834F /* UIGestureRecognizer+GMGridViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A55C7A15157CA762000D834F /* UIGestureRecognizer+GMGridViewAdditions.m */; };
+		A55C7A1C157CA762000D834F /* UIView+GMGridViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A55C7A17157CA762000D834F /* UIView+GMGridViewAdditions.m */; };
+		A55C7A20157CA7E2000D834F /* GTSGridController.m in Sources */ = {isa = PBXBuildFile; fileRef = A55C7A1F157CA7E2000D834F /* GTSGridController.m */; };
+		A55C7A23157CA8AA000D834F /* GTSGridOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A55C7A22157CA8AA000D834F /* GTSGridOptionsViewController.m */; };
+		A55C7A2E157CA9A3000D834F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55C7A2D157CA9A3000D834F /* QuartzCore.framework */; };
+		A55C7A30157CB6D5000D834F /* close-x.png in Resources */ = {isa = PBXBuildFile; fileRef = A55C7A2F157CB6D5000D834F /* close-x.png */; };
+		A55C7A33157CB811000D834F /* calculator-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A55C7A31157CB811000D834F /* calculator-icon.png */; };
+		A55C7A34157CB811000D834F /* calculator-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A55C7A32157CB811000D834F /* calculator-icon@2x.png */; };
+		A55C7A37157CB855000D834F /* GTSCalculatorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A55C7A36157CB855000D834F /* GTSCalculatorButton.m */; };
+		A55C7A3C157CBDCA000D834F /* CalculatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A55C7A3B157CBDCA000D834F /* CalculatorView.xib */; };
+		A55C7A3F157CBE1B000D834F /* GTSCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A55C7A3E157CBE1B000D834F /* GTSCalculatorViewController.m */; };
 		A55D606A157A127600DEFCF7 /* GTSFormTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A55D6069157A127600DEFCF7 /* GTSFormTextFieldCell.m */; };
 		A55D606D157A1A3700DEFCF7 /* GTSFormCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A55D606C157A1A3700DEFCF7 /* GTSFormCell.m */; };
 		A55D6072157A275F00DEFCF7 /* GTSFormTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A55D6071157A275F00DEFCF7 /* GTSFormTableView.m */; };
@@ -254,6 +269,33 @@
 		A54C87FA1577DBBE002B1116 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A54C87FC1577DBE4002B1116 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A54C87FE1578A597002B1116 /* ProjectForm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ProjectForm.json; path = resources/ProjectForm.json; sourceTree = "<group>"; };
+		A55C7A06157CA41A000D834F /* GTSFormatters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSFormatters.h; sourceTree = "<group>"; };
+		A55C7A07157CA41A000D834F /* GTSFormatters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSFormatters.m; sourceTree = "<group>"; };
+		A55C7A0C157CA762000D834F /* GMGridView-Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GMGridView-Constants.h"; path = "external/grid/GMGridView-Constants.h"; sourceTree = "<group>"; };
+		A55C7A0D157CA762000D834F /* GMGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GMGridView.h; path = external/grid/GMGridView.h; sourceTree = "<group>"; };
+		A55C7A0E157CA762000D834F /* GMGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GMGridView.m; path = external/grid/GMGridView.m; sourceTree = "<group>"; };
+		A55C7A0F157CA762000D834F /* GMGridViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GMGridViewCell.h; path = external/grid/GMGridViewCell.h; sourceTree = "<group>"; };
+		A55C7A10157CA762000D834F /* GMGridViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GMGridViewCell.m; path = external/grid/GMGridViewCell.m; sourceTree = "<group>"; };
+		A55C7A11157CA762000D834F /* GMGridViewCell+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GMGridViewCell+Extended.h"; path = "external/grid/GMGridViewCell+Extended.h"; sourceTree = "<group>"; };
+		A55C7A12157CA762000D834F /* GMGridViewLayoutStrategies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GMGridViewLayoutStrategies.h; path = external/grid/GMGridViewLayoutStrategies.h; sourceTree = "<group>"; };
+		A55C7A13157CA762000D834F /* GMGridViewLayoutStrategies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GMGridViewLayoutStrategies.m; path = external/grid/GMGridViewLayoutStrategies.m; sourceTree = "<group>"; };
+		A55C7A14157CA762000D834F /* UIGestureRecognizer+GMGridViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIGestureRecognizer+GMGridViewAdditions.h"; path = "external/grid/UIGestureRecognizer+GMGridViewAdditions.h"; sourceTree = "<group>"; };
+		A55C7A15157CA762000D834F /* UIGestureRecognizer+GMGridViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIGestureRecognizer+GMGridViewAdditions.m"; path = "external/grid/UIGestureRecognizer+GMGridViewAdditions.m"; sourceTree = "<group>"; };
+		A55C7A16157CA762000D834F /* UIView+GMGridViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+GMGridViewAdditions.h"; path = "external/grid/UIView+GMGridViewAdditions.h"; sourceTree = "<group>"; };
+		A55C7A17157CA762000D834F /* UIView+GMGridViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+GMGridViewAdditions.m"; path = "external/grid/UIView+GMGridViewAdditions.m"; sourceTree = "<group>"; };
+		A55C7A1E157CA7E2000D834F /* GTSGridController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTSGridController.h; path = temporary/GTSGridController.h; sourceTree = "<group>"; };
+		A55C7A1F157CA7E2000D834F /* GTSGridController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTSGridController.m; path = temporary/GTSGridController.m; sourceTree = "<group>"; };
+		A55C7A21157CA8AA000D834F /* GTSGridOptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTSGridOptionsViewController.h; path = temporary/GTSGridOptionsViewController.h; sourceTree = "<group>"; };
+		A55C7A22157CA8AA000D834F /* GTSGridOptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTSGridOptionsViewController.m; path = temporary/GTSGridOptionsViewController.m; sourceTree = "<group>"; };
+		A55C7A2D157CA9A3000D834F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A55C7A2F157CB6D5000D834F /* close-x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "close-x.png"; path = "resources/images/close-x.png"; sourceTree = "<group>"; };
+		A55C7A31157CB811000D834F /* calculator-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "calculator-icon.png"; path = "resources/images/calculator-icon.png"; sourceTree = "<group>"; };
+		A55C7A32157CB811000D834F /* calculator-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "calculator-icon@2x.png"; path = "resources/images/calculator-icon@2x.png"; sourceTree = "<group>"; };
+		A55C7A35157CB855000D834F /* GTSCalculatorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSCalculatorButton.h; sourceTree = "<group>"; };
+		A55C7A36157CB855000D834F /* GTSCalculatorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSCalculatorButton.m; sourceTree = "<group>"; };
+		A55C7A3B157CBDCA000D834F /* CalculatorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalculatorView.xib; sourceTree = "<group>"; };
+		A55C7A3D157CBE1B000D834F /* GTSCalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSCalculatorViewController.h; sourceTree = "<group>"; };
+		A55C7A3E157CBE1B000D834F /* GTSCalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSCalculatorViewController.m; sourceTree = "<group>"; };
 		A55D6068157A127600DEFCF7 /* GTSFormTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSFormTextFieldCell.h; sourceTree = "<group>"; };
 		A55D6069157A127600DEFCF7 /* GTSFormTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSFormTextFieldCell.m; sourceTree = "<group>"; };
 		A55D606B157A1A3700DEFCF7 /* GTSFormCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSFormCell.h; sourceTree = "<group>"; };
@@ -274,7 +316,7 @@
 		A55D6094157A4B9900DEFCF7 /* GTSRowElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSRowElement.m; sourceTree = "<group>"; };
 		A55D6096157A507700DEFCF7 /* GTSFormTableViewBaseDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSFormTableViewBaseDelegate.h; sourceTree = "<group>"; };
 		A55D6097157A507700DEFCF7 /* GTSFormTableViewBaseDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSFormTableViewBaseDelegate.m; sourceTree = "<group>"; };
-		A55D609A157A583800DEFCF7 /* GTSProjectFormEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; path = GTSProjectFormEngine.h; sourceTree = "<group>"; };
+		A55D609A157A583800DEFCF7 /* GTSProjectFormEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSProjectFormEngine.h; sourceTree = "<group>"; };
 		A55D609B157A583800DEFCF7 /* GTSProjectFormEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSProjectFormEngine.m; sourceTree = "<group>"; };
 		A55D609D157A58C000DEFCF7 /* GTSForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSForm.h; sourceTree = "<group>"; };
 		A55D609E157A58C100DEFCF7 /* GTSForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSForm.m; sourceTree = "<group>"; };
@@ -299,6 +341,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A55C7A2E157CA9A3000D834F /* QuartzCore.framework in Frameworks */,
 				A56D6FF115790EE000D01627 /* MobileCoreServices.framework in Frameworks */,
 				A50EBBC11577805E00BD9C60 /* CoreLocation.framework in Frameworks */,
 				A50EBBBF1577801A00BD9C60 /* MapKit.framework in Frameworks */,
@@ -332,6 +375,7 @@
 		A50EBADF15764C1C00BD9C60 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A55C7A2D157CA9A3000D834F /* QuartzCore.framework */,
 				A56D6FF015790EDE00D01627 /* MobileCoreServices.framework */,
 				A50EBBC01577805E00BD9C60 /* CoreLocation.framework */,
 				A50EBBBE1577801A00BD9C60 /* MapKit.framework */,
@@ -346,6 +390,7 @@
 		A50EBAE815764C1C00BD9C60 /* Gates */ = {
 			isa = PBXGroup;
 			children = (
+				A55C7A1D157CA771000D834F /* Temporary */,
 				A55D6099157A581A00DEFCF7 /* Common */,
 				A55D6082157A402900DEFCF7 /* Components */,
 				A55D606E157A26F200DEFCF7 /* Form */,
@@ -376,6 +421,7 @@
 		A50EBB1215777D8600BD9C60 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				A55C7A0B157CA753000D834F /* GMGridView */,
 				A50EBBC2157780E200BD9C60 /* SplitView */,
 				A50EBB1315777D8F00BD9C60 /* QuickDialog */,
 			);
@@ -550,8 +596,57 @@
 			children = (
 				A55D607A157A372800DEFCF7 /* Images */,
 				A54C87FE1578A597002B1116 /* ProjectForm.json */,
+				A55C7A3B157CBDCA000D834F /* CalculatorView.xib */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		A55C7A0A157CA6B9000D834F /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				A55C7A35157CB855000D834F /* GTSCalculatorButton.h */,
+				A55C7A36157CB855000D834F /* GTSCalculatorButton.m */,
+			);
+			name = Buttons;
+			sourceTree = "<group>";
+		};
+		A55C7A0B157CA753000D834F /* GMGridView */ = {
+			isa = PBXGroup;
+			children = (
+				A55C7A0C157CA762000D834F /* GMGridView-Constants.h */,
+				A55C7A0D157CA762000D834F /* GMGridView.h */,
+				A55C7A0E157CA762000D834F /* GMGridView.m */,
+				A55C7A0F157CA762000D834F /* GMGridViewCell.h */,
+				A55C7A10157CA762000D834F /* GMGridViewCell.m */,
+				A55C7A11157CA762000D834F /* GMGridViewCell+Extended.h */,
+				A55C7A12157CA762000D834F /* GMGridViewLayoutStrategies.h */,
+				A55C7A13157CA762000D834F /* GMGridViewLayoutStrategies.m */,
+				A55C7A14157CA762000D834F /* UIGestureRecognizer+GMGridViewAdditions.h */,
+				A55C7A15157CA762000D834F /* UIGestureRecognizer+GMGridViewAdditions.m */,
+				A55C7A16157CA762000D834F /* UIView+GMGridViewAdditions.h */,
+				A55C7A17157CA762000D834F /* UIView+GMGridViewAdditions.m */,
+			);
+			name = GMGridView;
+			sourceTree = "<group>";
+		};
+		A55C7A1D157CA771000D834F /* Temporary */ = {
+			isa = PBXGroup;
+			children = (
+				A55C7A21157CA8AA000D834F /* GTSGridOptionsViewController.h */,
+				A55C7A22157CA8AA000D834F /* GTSGridOptionsViewController.m */,
+				A55C7A1E157CA7E2000D834F /* GTSGridController.h */,
+				A55C7A1F157CA7E2000D834F /* GTSGridController.m */,
+			);
+			name = Temporary;
+			sourceTree = "<group>";
+		};
+		A55C7A38157CB967000D834F /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				A55C7A3D157CBE1B000D834F /* GTSCalculatorViewController.h */,
+				A55C7A3E157CBE1B000D834F /* GTSCalculatorViewController.m */,
+			);
+			name = Calculator;
 			sourceTree = "<group>";
 		};
 		A55D6066157A119C00DEFCF7 /* Cells */ = {
@@ -602,6 +697,9 @@
 		A55D607A157A372800DEFCF7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				A55C7A31157CB811000D834F /* calculator-icon.png */,
+				A55C7A32157CB811000D834F /* calculator-icon@2x.png */,
+				A55C7A2F157CB6D5000D834F /* close-x.png */,
 				A55D607B157A383C00DEFCF7 /* paper.png */,
 				A55D607C157A383C00DEFCF7 /* paper@2x.png */,
 			);
@@ -611,6 +709,8 @@
 		A55D6082157A402900DEFCF7 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				A55C7A38157CB967000D834F /* Calculator */,
+				A55C7A0A157CA6B9000D834F /* Buttons */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -641,6 +741,8 @@
 		A55D6099157A581A00DEFCF7 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A55C7A06157CA41A000D834F /* GTSFormatters.h */,
+				A55C7A07157CA41A000D834F /* GTSFormatters.m */,
 				A55D609A157A583800DEFCF7 /* GTSProjectFormEngine.h */,
 				A55D609B157A583800DEFCF7 /* GTSProjectFormEngine.m */,
 			);
@@ -707,6 +809,10 @@
 				A54C87FF1578A597002B1116 /* ProjectForm.json in Resources */,
 				A55D607D157A383C00DEFCF7 /* paper.png in Resources */,
 				A55D607E157A383C00DEFCF7 /* paper@2x.png in Resources */,
+				A55C7A30157CB6D5000D834F /* close-x.png in Resources */,
+				A55C7A33157CB811000D834F /* calculator-icon.png in Resources */,
+				A55C7A34157CB811000D834F /* calculator-icon@2x.png in Resources */,
+				A55C7A3C157CBDCA000D834F /* CalculatorView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -799,6 +905,16 @@
 				A5358579157BD688005FB7BC /* GTSLabelInfoCell.m in Sources */,
 				A535857C157BDA17005FB7BC /* GTSLabelInfoElement.m in Sources */,
 				A535857F157BE243005FB7BC /* GTSEditableElement.m in Sources */,
+				A55C7A08157CA41A000D834F /* GTSFormatters.m in Sources */,
+				A55C7A18157CA762000D834F /* GMGridView.m in Sources */,
+				A55C7A19157CA762000D834F /* GMGridViewCell.m in Sources */,
+				A55C7A1A157CA762000D834F /* GMGridViewLayoutStrategies.m in Sources */,
+				A55C7A1B157CA762000D834F /* UIGestureRecognizer+GMGridViewAdditions.m in Sources */,
+				A55C7A1C157CA762000D834F /* UIView+GMGridViewAdditions.m in Sources */,
+				A55C7A20157CA7E2000D834F /* GTSGridController.m in Sources */,
+				A55C7A23157CA8AA000D834F /* GTSGridOptionsViewController.m in Sources */,
+				A55C7A37157CB855000D834F /* GTSCalculatorButton.m in Sources */,
+				A55C7A3F157CBE1B000D834F /* GTSCalculatorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

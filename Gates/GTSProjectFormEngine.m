@@ -1,4 +1,5 @@
 #import "GTSProjectFormEngine.h"
+#import "GTSFormatters.h"
 #import "GTSForm.h"
 #import "GTSSection.h"
 #import "GTSNumberElement.h"
@@ -8,9 +9,13 @@
     __strong GTSNumberElement *gatesWidthElement;
     __strong GTSNumberElement *gatesHeightElement;
     __strong GTSLabelInfoElement *gatesSurfaceElement;
+	
+	__strong NSDecimalNumber *aMillion
+	;
 }
 
 @synthesize form;
+@synthesize delegate;
 
 + (GTSProjectFormEngine *)sharedInstance {
     static dispatch_once_t once;
@@ -25,6 +30,7 @@
 - (id)init {
     self = [super init];
     if (self ) {
+		aMillion = [NSDecimalNumber decimalNumberWithString:@"1000000"];
         [self build];
     }
     return self;
@@ -41,16 +47,15 @@
 	return section;
 }
 
-- (GTSForm *)build {
+- (void)build {
 	self.form = [GTSForm new];
 	[form addSection:[self buildGatesSection]];
-	return form;
 }
 
-- (GTSNumberElement *)numberElementWithLabel:(NSString *)label withDelegate:(id<GTSElementDelegate>)delegate section:(GTSSection*)section {
+- (GTSNumberElement *)numberElementWithLabel:(NSString *)label withDelegate:(id<GTSElementDelegate>)aDelegate section:(GTSSection*)section {
     GTSNumberElement *element = [GTSNumberElement new];
     element.label = NSLocalizedString(label, nil);
-    element.delegate = delegate;
+    element.delegate = aDelegate;
     
     [section addElement:element];
     
@@ -68,9 +73,12 @@
 - (void)valueChangedForElement:(GTSRowElement *)element {
     if ((element == gatesWidthElement || element == gatesHeightElement) && 
                 (gatesHeightElement.number && gatesWidthElement.number)) {
-        NSDecimalNumber *surface = [gatesWidthElement.number decimalNumberByMultiplyingBy:gatesHeightElement.number];
-        gatesSurfaceElement.info = [surface description];
+        NSDecimalNumber *surface = [[gatesWidthElement.number decimalNumberByMultiplyingBy:gatesHeightElement.number] decimalNumberByDividingBy:aMillion];
+        gatesSurfaceElement.info = [[[GTSFormatters sharedInstance] floatNumberFormatter] stringFromNumber:surface];
         
+		if (self.delegate && [self.delegate respondsToSelector:@selector(reloadAnElement:)]) {
+			[self.delegate reloadAnElement:gatesSurfaceElement];
+		}
     }
 }
 @end

@@ -8,5 +8,4 @@
 @property (nonatomic, weak) GTSLabelInfoElement *element;
 
 - (void)updateCellFromElement:(GTSLabelInfoElement *)anElement;
-- (void)updateInfoFromElement;
 @end

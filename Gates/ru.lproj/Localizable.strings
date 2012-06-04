@@ -12,6 +12,32 @@
 "PROJECT_GATES_HEIGHT" = "Высота (В), мм";
 "PROJECT_GATES_SURFACE" = "Площадь проема, м2";
 
-"Previous" = "Назад";
-"Next" = "Далее";
-"Done" = "Заврешить";
+"ACTIONBAR_PREVIOUS" = "Назад";
+"ACTIONBAR_NEXT" = "Далее";
+"ACTIONBAR_DONE" = "Завершить";
+
+"CATALOG_TITLE" = "Каталог";
+"PROJECTS_TITLE" = "Проекты";
+
+"GRID_OPTS" = "Настройки";
+"GRID_OPTS_GENERAL" = "Оновные";
+"GRID_OPTS_GENERAL_EDITING" = "Редактирование";
+"GRID_OPTS_LAYOUT" = "Расположение";
+"GRID_OPTS_LAYOUT_STRATEGY_VERTICAL" = "Вертикально";
+"GRID_OPTS_LAYOUT_STRATEGY_HORIZONTAL" = "Горизонтально";
+"GRID_OPTS_LAYOUT_STRATEGY_PAGED_LTR" = "Постранично справа налево";
+"GRID_OPTS_LAYOUT_STRATEGY_PAGED_TTB" = "Постранично сверху вниз";
+"GRID_OPTS_LAYOUT_SPACING" = "Пространство между ячейками";
+"GRID_OPTS_LAYOUT_CENTER" = "Центрирование";
+"GRID_OPTS_LAYOUT_INSETS" = "Отступы";
+"GRID_OPTS_SORTING" = "Сортировка";
+"GRID_OPTS_SORTING_STYLE" = "Стиль";
+"GRID_OPTS_SORTING_STYLE_SWAP" = "Замена";
+"GRID_OPTS_SORTING_STYLE_PUSH" = "Вставка";
+"GRID_OPTS_GESTURES" = "Жесты";
+"GRID_OPTS_GESTURES_EDIT" = "Редактировать по долгому нажатию";
+"GRID_OPTS_GESTURES_DISABLE" = "Запрет редактирования пустого таба";
+"GRID_OPTS_DEBUG" = "Отладка";
+"GRID_OPTS_DEBUG_BACKGROUND" = "Цвет подложки";
+"GRID_OPTS_DEBUG_RELOAD" = "Перезагрузка данных";
+"GRID_OPTS_RELOAD" = "Перезагрузить";

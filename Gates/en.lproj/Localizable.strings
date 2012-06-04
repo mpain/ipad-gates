@@ -12,3 +12,33 @@
 "PROJECT_GATES_HEIGHT" = "Height (H), mm";
 "PROJECT_GATES_SURFACE" = "Gates surface, m2";
 
+"ACTIONBAR_PREVIOUS" = "Previous";
+"ACTIONBAR_NEXT" = "Next";
+"ACTIONBAR_DONE" = "Done";
+
+"CATALOG__TITLE" = "Catalog";
+"PROJECTS_TITLE" = "Projects";
+
+"GRID_OPTS" = "Options";
+"GRID_OPTS_GENERAL" = "General";
+"GRID_OPTS_GENERAL_EDITING" = "Editing";
+"GRID_OPTS_LAYOUT" = "Layout";
+"GRID_OPTS_LAYOUT_STRATEGY_VERTICAL" = "Horizontal strategy";
+"GRID_OPTS_LAYOUT_STRATEGY_HORIZONTAL" = "Horizontal strategy";
+"GRID_OPTS_LAYOUT_STRATEGY_PAGED_LTR" = "Horizontal paged LTR strategy";
+"GRID_OPTS_LAYOUT_STRATEGY_PAGED_TTB" = "Horizontal paged TTB strategy";
+"GRID_OPTS_LAYOUT_SPACING" = "Spacing";
+"GRID_OPTS_LAYOUT_CENTER" = "Center";
+"GRID_OPTS_LAYOUT_INSETS" = "Edge insets";
+"GRID_OPTS_SORTING" = "Sorting";
+"GRID_OPTS_SORTING_STYLE" = "Style";
+"GRID_OPTS_SORTING_STYLE_SWAP" = "Swap";
+"GRID_OPTS_SORTING_STYLE_PUSH" = "Push";
+"GRID_OPTS_GESTURES" = "Gestures";
+"GRID_OPTS_GESTURES_EDIT" = "Edit on long tap";
+"GRID_OPTS_GESTURES_DISABLE" = "Disable edit on empty tab";
+"GRID_OPTS_DEBUG" = "Debug";
+"GRID_OPTS_DEBUG_BACKGROUND" = "Grid background color";
+"GRID_OPTS_DEBUG_RELOAD" = "Reload from Datasource";
+"GRID_OPTS_RELOAD" = "Reload";
+

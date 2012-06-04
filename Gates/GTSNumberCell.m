@@ -12,7 +12,7 @@
 
 - (void)updateCellForElement:(GTSRowElement *)element andTableView:(GTSFormTableView *)aTableView {
     [super updateCellForElement:element andTableView:aTableView];
-    [self updateTextValueFromElement];
+    [self updateCellFromElement];
 }
 
 - (GTSNumberElement *)numberElement {
@@ -24,7 +24,7 @@
     formatter.maximumFractionDigits = [self numberElement].fractionDigits;
 }
 
-- (void)updateTextValueFromElement {
+- (void)updateCellFromElement {
     [self updateFormatter];
     self.textValue.text = [formatter stringFromNumber:[self numberElement].number];
 }
@@ -45,13 +45,12 @@
     [self numberElement].number = number;
 }
 
-- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)replacement {
-    [super textField:textField shouldChangeCharactersInRange:range replacementString:replacement];
-    
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)replacement { 
     NSString *newValue = [textField.text stringByReplacingCharactersInRange:range withString:replacement];
     [self updateElementFromTextValue:newValue];
-    [self updateTextValueFromElement];
+    [self updateCellFromElement];
     
+	[super textField:textField shouldChangeCharactersInRange:range replacementString:replacement];
     return NO;
 }
 @end

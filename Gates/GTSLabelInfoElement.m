@@ -11,7 +11,7 @@
 
 - (GTSFormCell *)getCellForTableView:(GTSFormTableView *)tableView {
     GTSLabelInfoCell *cell = (GTSLabelInfoCell *)[super getCellForTableView:tableView];
-    [cell updateInfoFromElement];
+    [cell updateCellFromElement:self];
     return cell;
 }
 @end

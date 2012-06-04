@@ -2,19 +2,23 @@
 #import "GTSForm.h"
 #import "GTSFormTableView.h"
 #import "GTSFormTextFieldCell.h"
-#import "GTSProjectFormEngine.h"
 #import "GTSRowElement.h"
 #import "GTSSection.h"
 
 @implementation GTSFormDataSource {
+	__weak GTSFormTableView *owner;
 }
 
 @synthesize form;
 
-- (id)init {
+- (id)initWithTableView:(GTSFormTableView *)aTableView {
     self = [super init];
     if (self) {
-        form = [[GTSProjectFormEngine sharedInstance] form];
+		owner = aTableView;
+		
+		GTSProjectFormEngine *engine = [GTSProjectFormEngine sharedInstance];
+        form = engine.form;
+		engine.delegate = self;
     }
     return self;
 }
@@ -38,6 +42,12 @@
     GTSRowElement *element = [section.elements objectAtIndex:indexPath.row];
     
     return [element getCellForTableView:table];
+}
+
+- (void)reloadAnElement:(GTSRowElement *)element {
+	GTSFormCell *cell = (GTSFormCell *)[owner cellForElement:element];
+	[cell updateCellFromElement];
+	[cell setNeedsDisplay];
 }
 
 @end

@@ -8,10 +8,10 @@
 
 - (void)updateCellFromElement:(GTSLabelInfoElement *)anElement {
     self.element = anElement;
-    [self updateInfoFromElement];
+    [self updateCellFromElement];
 }
 
-- (void)updateInfoFromElement {
+- (void)updateCellFromElement {
     self.labelInfo.text = element.info;
 }
 

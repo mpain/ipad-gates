@@ -2,4 +2,6 @@
 
 @interface GTSFormCell : UITableViewCell
 
+- (void)updateCellFromElement;
+
 @end

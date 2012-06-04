@@ -1,4 +1,5 @@
 #import "GTSMainSplitViewController.h"
+#import "GTSProjectDialogController.h"
 #import "GTSAppDelegate.h"
 
 @interface GTSMainSplitViewController ()
@@ -11,7 +12,10 @@
 	GTSAppDelegate *application = (GTSAppDelegate *)[[UIApplication sharedApplication] delegate];
 	
 	[self pushToMasterController:[application.storyboard instantiateViewControllerWithIdentifier:@"MasterViewController"]];
-	[self pushToDetailController:[application.storyboard instantiateViewControllerWithIdentifier:@"DetailViewController"]];
+	
+	GTSProjectDialogController *controller = [application.storyboard instantiateViewControllerWithIdentifier:@"DetailViewController"];
+	self.title = controller.title;
+	[self pushToDetailController:controller];
 }
 
 - (void)viewDidUnload {

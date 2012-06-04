@@ -6,7 +6,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
-        <!--Main Split View Controller - Item 1-->
+        <!--Main Split View Controller - Projects-->
         <scene sceneID="3wa-gL-hXT">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dmf-YF-jrL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -16,11 +16,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="EmN-dq-Mx3"/>
+                    <tabBarItem key="tabBarItem" title="Projects" id="EmN-dq-Mx3"/>
                     <navigationItem key="navigationItem" id="Bjb-d2-Bwy"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="344" y="-1383"/>
+            <point key="canvasLocation" x="112" y="-3431"/>
         </scene>
         <!--Projects Table View Controller-->
         <scene sceneID="LCC-Wu-JQY">
@@ -49,7 +49,22 @@
                     </tableView>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="1196" y="-1383"/>
+            <point key="canvasLocation" x="1132" y="-3431"/>
+        </scene>
+        <!--Grid Controller-->
+        <scene sceneID="gzU-BU-ar7">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PgT-Vf-kXA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Kux-W1-WzW" customClass="GTSGridController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jad-kb-aF9">
+                        <rect key="frame" x="0.0" y="64" width="768" height="911"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eqL-JG-RLj"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1155" y="-1982"/>
         </scene>
         <!--Project Dialog Controller-->
         <scene sceneID="SZZ-Nz-ILE">
@@ -85,7 +100,7 @@
                                                 <outlet property="delegate" destination="M2Z-f6-Shm" id="z4Y-vY-opC"/>
                                             </connections>
                                         </textField>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eVa-6p-fRZ">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eVa-6p-fRZ" customClass="GTSCalculatorButton">
                                             <rect key="frame" x="716" y="7" width="29" height="29"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
                                             <color key="backgroundColor" red="0.72989078439999999" green="0.17602848130000001" blue="0.1125427205" alpha="1" colorSpace="calibratedRGB"/>
@@ -164,7 +179,7 @@
                     </tableView>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1196" y="-250"/>
+            <point key="canvasLocation" x="2012" y="-3426"/>
         </scene>
         <!--Tab Bar Controller For Split Controller-->
         <scene sceneID="iGM-vz-FWF">
@@ -179,12 +194,76 @@
                     </tabBar>
                     <connections>
                         <segue destination="cvq-Jt-QcI" kind="relationship" relationship="viewControllers" id="9Vl-FB-D2F"/>
+                        <segue destination="097-Tf-WvC" kind="relationship" relationship="viewControllers" id="pIH-04-JRV"/>
                     </connections>
                 </tabBarController>
             </objects>
-            <point key="canvasLocation" x="-800" y="-915"/>
+            <point key="canvasLocation" x="-888" y="-1323"/>
+        </scene>
+        <!--Navigation Controller - Catalog-->
+        <scene sceneID="DZ3-CD-HEn">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xjw-XM-Uim" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="097-Tf-WvC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Catalog" id="Qxn-68-Quu"/>
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Sww-sV-KjD">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Kux-W1-WzW" kind="relationship" relationship="rootViewController" id="S2J-Wz-GP7"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="151" y="-1982"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="APSplitViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/APSplitViewController.h"/>
+        </class>
+        <class className="APTabBarControllerForSplitController" superclassName="UITabBarController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/APTabBarControllerForSplitController.h"/>
+        </class>
+        <class className="GTSCalculatorButton" superclassName="UIButton">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GTSCalculatorButton.h"/>
+        </class>
+        <class className="GTSEditableCell" superclassName="GTSLabelCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GTSEditableCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="textValue" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="GTSFormCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GTSFormCell.h"/>
+        </class>
+        <class className="GTSFormTableView" superclassName="UITableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GTSFormTableView.h"/>
+        </class>
+        <class className="GTSGridController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GTSGridController.h"/>
+        </class>
+        <class className="GTSLabelCell" superclassName="GTSFormCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GTSLabelCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="label" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="GTSLabelInfoCell" superclassName="GTSLabelCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GTSLabelInfoCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="labelInfo" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="GTSMainSplitViewController" superclassName="APSplitViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GTSMainSplitViewController.h"/>
+        </class>
+        <class className="GTSNumberCell" superclassName="GTSEditableCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GTSNumberCell.h"/>
+        </class>
+        <class className="GTSProjectDialogController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GTSProjectDialogController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

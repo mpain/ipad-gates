@@ -9,7 +9,7 @@
 @implementation GTSProjectDialogController
 
 - (void)awakeFromNib {
-	
+	self.title = NSLocalizedString(@"PROJECTS_TITLE", nil);
 }
 
 - (void)createNavigationBarButtons {
