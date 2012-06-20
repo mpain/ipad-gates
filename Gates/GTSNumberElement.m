@@ -3,8 +3,16 @@
 
 @implementation GTSNumberElement
 
-@synthesize number;
-@synthesize fractionDigits;
+@synthesize number = _number;
+@synthesize fractionDigits = _fractionDigits;
+
+- (id)init {
+	self = [super init];
+	if (self) {
+		_number = NSDecimalNumber.zero;
+	}
+	return self;
+}
 
 - (NSString *)cellReusableIdentifier {
     return @"GTSNumberCellIdentifier";

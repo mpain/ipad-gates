@@ -79,6 +79,12 @@
 		A5358579157BD688005FB7BC /* GTSLabelInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A5358578157BD688005FB7BC /* GTSLabelInfoCell.m */; };
 		A535857C157BDA17005FB7BC /* GTSLabelInfoElement.m in Sources */ = {isa = PBXBuildFile; fileRef = A535857B157BDA16005FB7BC /* GTSLabelInfoElement.m */; };
 		A535857F157BE243005FB7BC /* GTSEditableElement.m in Sources */ = {isa = PBXBuildFile; fileRef = A535857E157BE242005FB7BC /* GTSEditableElement.m */; };
+		A53E816F159050550054022F /* GTSColors.m in Sources */ = {isa = PBXBuildFile; fileRef = A53E816E159050550054022F /* GTSColors.m */; };
+		A53E817215905ADB0054022F /* GTSFormHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A53E817115905AD90054022F /* GTSFormHeaderView.m */; };
+		A53E817915907A370054022F /* GTSPickerElement.m in Sources */ = {isa = PBXBuildFile; fileRef = A53E817815907A340054022F /* GTSPickerElement.m */; };
+		A53E817C15907A750054022F /* GTSPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A53E817B15907A740054022F /* GTSPickerCell.m */; };
+		A53E8180159099860054022F /* GTSPickerSpacedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A53E817F159099820054022F /* GTSPickerSpacedParser.m */; };
+		A53E818B1590B1CA0054022F /* GTSCalculatorBrains.m in Sources */ = {isa = PBXBuildFile; fileRef = A53E818A1590B1CA0054022F /* GTSCalculatorBrains.m */; };
 		A54C87F71577CF84002B1116 /* GTSMainSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A54C87F61577CF84002B1116 /* GTSMainSplitViewController.m */; };
 		A54C87FB1577DBBF002B1116 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A54C87F91577DBBE002B1116 /* Localizable.strings */; };
 		A54C87FF1578A597002B1116 /* ProjectForm.json in Resources */ = {isa = PBXBuildFile; fileRef = A54C87FE1578A597002B1116 /* ProjectForm.json */; };
@@ -264,6 +270,19 @@
 		A535857B157BDA16005FB7BC /* GTSLabelInfoElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSLabelInfoElement.m; sourceTree = "<group>"; };
 		A535857D157BE241005FB7BC /* GTSEditableElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSEditableElement.h; sourceTree = "<group>"; };
 		A535857E157BE242005FB7BC /* GTSEditableElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSEditableElement.m; sourceTree = "<group>"; };
+		A53E816D159050550054022F /* GTSColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSColors.h; sourceTree = "<group>"; };
+		A53E816E159050550054022F /* GTSColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSColors.m; sourceTree = "<group>"; };
+		A53E817015905AD70054022F /* GTSFormHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSFormHeaderView.h; sourceTree = "<group>"; };
+		A53E817115905AD90054022F /* GTSFormHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSFormHeaderView.m; sourceTree = "<group>"; };
+		A53E817715907A320054022F /* GTSPickerElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSPickerElement.h; sourceTree = "<group>"; };
+		A53E817815907A340054022F /* GTSPickerElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSPickerElement.m; sourceTree = "<group>"; };
+		A53E817A15907A720054022F /* GTSPickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSPickerCell.h; sourceTree = "<group>"; };
+		A53E817B15907A740054022F /* GTSPickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSPickerCell.m; sourceTree = "<group>"; };
+		A53E817D159098FF0054022F /* GTSPickerParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTSPickerParser.h; sourceTree = "<group>"; };
+		A53E817E1590997F0054022F /* GTSPickerSpacedParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSPickerSpacedParser.h; sourceTree = "<group>"; };
+		A53E817F159099820054022F /* GTSPickerSpacedParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSPickerSpacedParser.m; sourceTree = "<group>"; };
+		A53E81891590B1C90054022F /* GTSCalculatorBrains.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSCalculatorBrains.h; sourceTree = "<group>"; };
+		A53E818A1590B1CA0054022F /* GTSCalculatorBrains.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSCalculatorBrains.m; sourceTree = "<group>"; };
 		A54C87F51577CF84002B1116 /* GTSMainSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSMainSplitViewController.h; sourceTree = "<group>"; };
 		A54C87F61577CF84002B1116 /* GTSMainSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSMainSplitViewController.m; sourceTree = "<group>"; };
 		A54C87FA1577DBBE002B1116 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -591,6 +610,15 @@
 			name = Delegates;
 			sourceTree = "<group>";
 		};
+		A53E816B159050170054022F /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				A53E816D159050550054022F /* GTSColors.h */,
+				A53E816E159050550054022F /* GTSColors.m */,
+			);
+			name = Colors;
+			sourceTree = "<group>";
+		};
 		A54C87FD1578A55A002B1116 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -645,6 +673,8 @@
 			children = (
 				A55C7A3D157CBE1B000D834F /* GTSCalculatorViewController.h */,
 				A55C7A3E157CBE1B000D834F /* GTSCalculatorViewController.m */,
+				A53E81891590B1C90054022F /* GTSCalculatorBrains.h */,
+				A53E818A1590B1CA0054022F /* GTSCalculatorBrains.m */,
 			);
 			name = Calculator;
 			sourceTree = "<group>";
@@ -664,6 +694,8 @@
 				A5358578157BD688005FB7BC /* GTSLabelInfoCell.m */,
 				A561ADDF157AA75900AFBA24 /* GTSNumberCell.h */,
 				A561ADE0157AA75900AFBA24 /* GTSNumberCell.m */,
+				A53E817A15907A720054022F /* GTSPickerCell.h */,
+				A53E817B15907A740054022F /* GTSPickerCell.m */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -690,6 +722,8 @@
 				A55D6080157A386E00DEFCF7 /* GTSFormTableViewDelegate.m */,
 				A55D6096157A507700DEFCF7 /* GTSFormTableViewBaseDelegate.h */,
 				A55D6097157A507700DEFCF7 /* GTSFormTableViewBaseDelegate.m */,
+				A53E817015905AD70054022F /* GTSFormHeaderView.h */,
+				A53E817115905AD90054022F /* GTSFormHeaderView.m */,
 			);
 			name = Table;
 			sourceTree = "<group>";
@@ -709,6 +743,7 @@
 		A55D6082157A402900DEFCF7 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				A53E816B159050170054022F /* Colors */,
 				A55C7A38157CB967000D834F /* Calculator */,
 				A55C7A0A157CA6B9000D834F /* Buttons */,
 			);
@@ -730,6 +765,11 @@
 				A535857B157BDA16005FB7BC /* GTSLabelInfoElement.m */,
 				A561ADD5157A9F1700AFBA24 /* GTSNumberElement.h */,
 				A561ADD6157A9F1700AFBA24 /* GTSNumberElement.m */,
+				A53E817715907A320054022F /* GTSPickerElement.h */,
+				A53E817815907A340054022F /* GTSPickerElement.m */,
+				A53E817D159098FF0054022F /* GTSPickerParser.h */,
+				A53E817E1590997F0054022F /* GTSPickerSpacedParser.h */,
+				A53E817F159099820054022F /* GTSPickerSpacedParser.m */,
 				A55D6093157A4B9900DEFCF7 /* GTSRowElement.h */,
 				A55D6094157A4B9900DEFCF7 /* GTSRowElement.m */,
 				A55D6090157A49FE00DEFCF7 /* GTSSection.h */,
@@ -915,6 +955,12 @@
 				A55C7A23157CA8AA000D834F /* GTSGridOptionsViewController.m in Sources */,
 				A55C7A37157CB855000D834F /* GTSCalculatorButton.m in Sources */,
 				A55C7A3F157CBE1B000D834F /* GTSCalculatorViewController.m in Sources */,
+				A53E816F159050550054022F /* GTSColors.m in Sources */,
+				A53E817215905ADB0054022F /* GTSFormHeaderView.m in Sources */,
+				A53E817915907A370054022F /* GTSPickerElement.m in Sources */,
+				A53E817C15907A750054022F /* GTSPickerCell.m in Sources */,
+				A53E8180159099860054022F /* GTSPickerSpacedParser.m in Sources */,
+				A53E818B1590B1CA0054022F /* GTSCalculatorBrains.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -32,6 +32,24 @@
 	return visibleCount;
 }
 
+- (GTSRowElement *)elementAtIndex:(NSInteger)index {
+	__block GTSRowElement *result = nil;
+	__block NSInteger visibleIndex = 0;
+	[self.elements enumerateObjectsUsingBlock:^(id object, NSUInteger idx, BOOL *stop) {
+		GTSRowElement *current = (GTSRowElement *)object;
+		if (!current.hidden) {
+			if (visibleIndex == index) {
+				result = current;
+				*stop = YES;
+			} else {
+				visibleIndex++;
+			}
+		}
+	}];
+	
+	return result;
+}
+
 - (void)addElement:(GTSRowElement *)element {
     element.section = self;
 	[self.elements addObject:element];

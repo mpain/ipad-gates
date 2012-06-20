@@ -38,9 +38,12 @@
 - (void)updateCellForElement:(GTSRowElement *)anElement andTableView:(GTSFormTableView *)aTableView {
     self.element = anElement;
     self.tableView = aTableView;
+	textValue.text = ((GTSEditableElement *)anElement).text;
     textValue.inputAccessoryView = [self createActionBar];
     
     [self updatePrevNextStatus];
+	[self updateCellFromElement];
+	[self notificateAboutValueWasChanged];
 }
 
 #pragma mark - UITextField delegate -
@@ -64,10 +67,14 @@
 }
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
-    if (self.element.delegate && [self.element.delegate respondsToSelector:@selector(valueChangedForElement:)]) {
+    [self notificateAboutValueWasChanged];
+    return YES;
+}
+
+- (void)notificateAboutValueWasChanged {
+	if ([self.element.delegate respondsToSelector:@selector(valueChangedForElement:)]) {
         [self.element.delegate valueChangedForElement:element];
     }
-    return YES;
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {

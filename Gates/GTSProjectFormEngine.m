@@ -4,14 +4,14 @@
 #import "GTSSection.h"
 #import "GTSNumberElement.h"
 #import "GTSLabelInfoElement.h"
+#import "GTSPickerElement.h"
 
 @implementation GTSProjectFormEngine {
     __strong GTSNumberElement *gatesWidthElement;
     __strong GTSNumberElement *gatesHeightElement;
     __strong GTSLabelInfoElement *gatesSurfaceElement;
 	
-	__strong NSDecimalNumber *aMillion
-	;
+	__strong NSDecimalNumber *aMillion;
 }
 
 @synthesize form;
@@ -36,7 +36,26 @@
     return self;
 }
 
-- (GTSSection*)buildGatesSection {
+- (void)build {
+	self.form = [GTSForm new];
+	[form addSection:[self buildProjectSection]];
+	[form addSection:[self buildGatesSection]];
+}
+
+- (GTSSection *)buildProjectSection {
+	GTSSection *section = [GTSSection new];
+	section.title = NSLocalizedString(@"PROJECT_SECTION_COMMON", nil);
+	[self editableElementWithLabel:@"PROJECT_COMMON_TITLE" section:section];
+	[self editableElementWithLabel:@"PROJECT_COMMON_ADDRESS" section:section];
+	[self editableElementWithLabel:@"PROJECT_COMMON_CUSTOMER_NAME" section:section];
+	[self editableElementWithLabel:@"PROJECT_COMMON_CUSTOMER_PHONE" section:section];
+	
+	[self pickerElementWithLabel:@"PROJECT_COMMON_CUSTOMER_PICKER" section:section items:[NSArray arrayWithObject:[NSArray arrayWithObjects:@"First", @"Second", @"Third", @"Fourth", nil]]];
+	
+	return section;
+}
+
+- (GTSSection *)buildGatesSection {
 	GTSSection *section = [GTSSection new];
 	section.title = NSLocalizedString(@"PROJECT_SECTION_DIMENTIONS", nil);
     
@@ -47,10 +66,6 @@
 	return section;
 }
 
-- (void)build {
-	self.form = [GTSForm new];
-	[form addSection:[self buildGatesSection]];
-}
 
 - (GTSNumberElement *)numberElementWithLabel:(NSString *)label withDelegate:(id<GTSElementDelegate>)aDelegate section:(GTSSection*)section {
     GTSNumberElement *element = [GTSNumberElement new];
@@ -70,13 +85,29 @@
     return element;
 }
 
+- (GTSEditableElement *)editableElementWithLabel:(NSString *)label section:(GTSSection *)section {
+	GTSEditableElement *element = [GTSEditableElement new];
+    element.label = NSLocalizedString(label, nil);
+    [section addElement:element];
+    
+    return element;
+}
+
+- (GTSPickerElement *)pickerElementWithLabel:(NSString *)label section:(GTSSection *)section items:(NSArray *)items {
+	GTSPickerElement *element = [[GTSPickerElement alloc] initWithItems:items value:nil];
+    element.label = NSLocalizedString(label, nil);
+    [section addElement:element];
+    
+    return element;
+}
+
 - (void)valueChangedForElement:(GTSRowElement *)element {
     if ((element == gatesWidthElement || element == gatesHeightElement) && 
                 (gatesHeightElement.number && gatesWidthElement.number)) {
         NSDecimalNumber *surface = [[gatesWidthElement.number decimalNumberByMultiplyingBy:gatesHeightElement.number] decimalNumberByDividingBy:aMillion];
         gatesSurfaceElement.info = [[[GTSFormatters sharedInstance] floatNumberFormatter] stringFromNumber:surface];
         
-		if (self.delegate && [self.delegate respondsToSelector:@selector(reloadAnElement:)]) {
+		if ([self.delegate respondsToSelector:@selector(reloadAnElement:)]) {
 			[self.delegate reloadAnElement:gatesSurfaceElement];
 		}
     }

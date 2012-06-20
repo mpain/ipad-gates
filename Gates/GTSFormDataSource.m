@@ -32,14 +32,15 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	return [[form.sections objectAtIndex:section] visibleElementsCount];
+	GTSSection *formSection = [form.sections objectAtIndex:section];
+	return formSection.hidden? 0 : formSection.visibleElementsCount;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)aTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	GTSFormTableView *table = [self convertToTableView:aTableView];
     
     GTSSection *section = [form.sections objectAtIndex:indexPath.section];
-    GTSRowElement *element = [section.elements objectAtIndex:indexPath.row];
+    GTSRowElement *element = [section elementAtIndex:indexPath.row];
     
     return [element getCellForTableView:table];
 }
