@@ -85,9 +85,13 @@
 		A53E817C15907A750054022F /* GTSPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A53E817B15907A740054022F /* GTSPickerCell.m */; };
 		A53E8180159099860054022F /* GTSPickerSpacedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A53E817F159099820054022F /* GTSPickerSpacedParser.m */; };
 		A53E818B1590B1CA0054022F /* GTSCalculatorBrains.m in Sources */ = {isa = PBXBuildFile; fileRef = A53E818A1590B1CA0054022F /* GTSCalculatorBrains.m */; };
+		A53E8193159313AE0054022F /* GTSPdfView.m in Sources */ = {isa = PBXBuildFile; fileRef = A53E8192159313AE0054022F /* GTSPdfView.m */; };
+		A53E8196159315F60054022F /* GTSPdfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A53E8195159315F50054022F /* GTSPdfViewController.m */; };
+		A53E819815931B210054022F /* booklet.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A53E819715931B210054022F /* booklet.pdf */; };
 		A54C87F71577CF84002B1116 /* GTSMainSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A54C87F61577CF84002B1116 /* GTSMainSplitViewController.m */; };
 		A54C87FB1577DBBF002B1116 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A54C87F91577DBBE002B1116 /* Localizable.strings */; };
 		A54C87FF1578A597002B1116 /* ProjectForm.json in Resources */ = {isa = PBXBuildFile; fileRef = A54C87FE1578A597002B1116 /* ProjectForm.json */; };
+		A551612A159334190064E4ED /* GTSPageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5516128159334190064E4ED /* GTSPageScrollView.m */; };
 		A55C7A08157CA41A000D834F /* GTSFormatters.m in Sources */ = {isa = PBXBuildFile; fileRef = A55C7A07157CA41A000D834F /* GTSFormatters.m */; };
 		A55C7A18157CA762000D834F /* GMGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = A55C7A0E157CA762000D834F /* GMGridView.m */; };
 		A55C7A19157CA762000D834F /* GMGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A55C7A10157CA762000D834F /* GMGridViewCell.m */; };
@@ -283,11 +287,18 @@
 		A53E817F159099820054022F /* GTSPickerSpacedParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSPickerSpacedParser.m; sourceTree = "<group>"; };
 		A53E81891590B1C90054022F /* GTSCalculatorBrains.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSCalculatorBrains.h; sourceTree = "<group>"; };
 		A53E818A1590B1CA0054022F /* GTSCalculatorBrains.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSCalculatorBrains.m; sourceTree = "<group>"; };
+		A53E8191159313AE0054022F /* GTSPdfView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSPdfView.h; sourceTree = "<group>"; };
+		A53E8192159313AE0054022F /* GTSPdfView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSPdfView.m; sourceTree = "<group>"; };
+		A53E8194159315F50054022F /* GTSPdfViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSPdfViewController.h; sourceTree = "<group>"; };
+		A53E8195159315F50054022F /* GTSPdfViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSPdfViewController.m; sourceTree = "<group>"; };
+		A53E819715931B210054022F /* booklet.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = booklet.pdf; sourceTree = "<group>"; };
 		A54C87F51577CF84002B1116 /* GTSMainSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSMainSplitViewController.h; sourceTree = "<group>"; };
 		A54C87F61577CF84002B1116 /* GTSMainSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSMainSplitViewController.m; sourceTree = "<group>"; };
 		A54C87FA1577DBBE002B1116 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A54C87FC1577DBE4002B1116 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A54C87FE1578A597002B1116 /* ProjectForm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ProjectForm.json; path = resources/ProjectForm.json; sourceTree = "<group>"; };
+		A5516128159334190064E4ED /* GTSPageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSPageScrollView.m; sourceTree = "<group>"; };
+		A5516129159334190064E4ED /* GTSPageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSPageScrollView.h; sourceTree = "<group>"; };
 		A55C7A06157CA41A000D834F /* GTSFormatters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSFormatters.h; sourceTree = "<group>"; };
 		A55C7A07157CA41A000D834F /* GTSFormatters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSFormatters.m; sourceTree = "<group>"; };
 		A55C7A0C157CA762000D834F /* GMGridView-Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GMGridView-Constants.h"; path = "external/grid/GMGridView-Constants.h"; sourceTree = "<group>"; };
@@ -619,14 +630,35 @@
 			name = Colors;
 			sourceTree = "<group>";
 		};
+		A53E81901593137A0054022F /* PDF */ = {
+			isa = PBXGroup;
+			children = (
+				A53E8191159313AE0054022F /* GTSPdfView.h */,
+				A53E8192159313AE0054022F /* GTSPdfView.m */,
+				A53E8194159315F50054022F /* GTSPdfViewController.h */,
+				A53E8195159315F50054022F /* GTSPdfViewController.m */,
+			);
+			name = PDF;
+			sourceTree = "<group>";
+		};
 		A54C87FD1578A55A002B1116 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A53E819715931B210054022F /* booklet.pdf */,
 				A55D607A157A372800DEFCF7 /* Images */,
 				A54C87FE1578A597002B1116 /* ProjectForm.json */,
 				A55C7A3B157CBDCA000D834F /* CalculatorView.xib */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		A5516126159334060064E4ED /* PageScroller */ = {
+			isa = PBXGroup;
+			children = (
+				A5516129159334190064E4ED /* GTSPageScrollView.h */,
+				A5516128159334190064E4ED /* GTSPageScrollView.m */,
+			);
+			name = PageScroller;
 			sourceTree = "<group>";
 		};
 		A55C7A0A157CA6B9000D834F /* Buttons */ = {
@@ -743,6 +775,8 @@
 		A55D6082157A402900DEFCF7 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				A5516126159334060064E4ED /* PageScroller */,
+				A53E81901593137A0054022F /* PDF */,
 				A53E816B159050170054022F /* Colors */,
 				A55C7A38157CB967000D834F /* Calculator */,
 				A55C7A0A157CA6B9000D834F /* Buttons */,
@@ -853,6 +887,7 @@
 				A55C7A33157CB811000D834F /* calculator-icon.png in Resources */,
 				A55C7A34157CB811000D834F /* calculator-icon@2x.png in Resources */,
 				A55C7A3C157CBDCA000D834F /* CalculatorView.xib in Resources */,
+				A53E819815931B210054022F /* booklet.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -961,6 +996,9 @@
 				A53E817C15907A750054022F /* GTSPickerCell.m in Sources */,
 				A53E8180159099860054022F /* GTSPickerSpacedParser.m in Sources */,
 				A53E818B1590B1CA0054022F /* GTSCalculatorBrains.m in Sources */,
+				A53E8193159313AE0054022F /* GTSPdfView.m in Sources */,
+				A53E8196159315F60054022F /* GTSPdfViewController.m in Sources */,
+				A551612A159334190064E4ED /* GTSPageScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
