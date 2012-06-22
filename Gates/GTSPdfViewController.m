@@ -1,5 +1,5 @@
 #import "GTSPdfViewController.h"
-#import "GTSPdfView.h"
+#import "GTSPdfViewContainer.h"
 
 @implementation GTSPdfViewController {
 	CGPDFDocumentRef _document;
@@ -57,16 +57,8 @@
 }
 
 - (UIView*) pageScrollView:(GTSPageScrollView *)pageScrollView viewForPageAtIndex:(NSInteger)index {
-	CGPDFPageRef page = CGPDFDocumentGetPage(_document, index + 1);
-	
-	UIView *view = [[UIView alloc] initWithFrame:pageScrollView.bounds];
-	view.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];
-	view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-	
-	GTSPdfView *pdfView = [[GTSPdfView alloc] initWithFrame:view.bounds];
-	[pdfView setPage:page];
-	
-	[view addSubview:pdfView];
+	GTSPdfViewContainer *view = [[GTSPdfViewContainer alloc] initWithFrame:pageScrollView.bounds];
+	[view pdfDocument:_document loadPageWithNumber:index + 1];
 	return view;
 }
 

@@ -128,6 +128,7 @@
 		A56D6FE81578B96F00D01627 /* GTSProjectDialogController.m in Sources */ = {isa = PBXBuildFile; fileRef = A56D6FE71578B96F00D01627 /* GTSProjectDialogController.m */; };
 		A56D6FEA1578DFF500D01627 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56D6FEB1578DFF500D01627 /* MainStoryboard.storyboard */; };
 		A56D6FF115790EE000D01627 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56D6FF015790EDE00D01627 /* MobileCoreServices.framework */; };
+		A58682F1159495860048EE9E /* GTSPdfViewContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = A58682F0159495860048EE9E /* GTSPdfViewContainer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -364,6 +365,8 @@
 		A56D6FE71578B96F00D01627 /* GTSProjectDialogController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSProjectDialogController.m; sourceTree = "<group>"; };
 		A56D6FEB1578DFF500D01627 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		A56D6FF015790EDE00D01627 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A58682EF159495860048EE9E /* GTSPdfViewContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSPdfViewContainer.h; sourceTree = "<group>"; };
+		A58682F0159495860048EE9E /* GTSPdfViewContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSPdfViewContainer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -637,6 +640,8 @@
 				A53E8192159313AE0054022F /* GTSPdfView.m */,
 				A53E8194159315F50054022F /* GTSPdfViewController.h */,
 				A53E8195159315F50054022F /* GTSPdfViewController.m */,
+				A58682EF159495860048EE9E /* GTSPdfViewContainer.h */,
+				A58682F0159495860048EE9E /* GTSPdfViewContainer.m */,
 			);
 			name = PDF;
 			sourceTree = "<group>";
@@ -999,6 +1004,7 @@
 				A53E8193159313AE0054022F /* GTSPdfView.m in Sources */,
 				A53E8196159315F60054022F /* GTSPdfViewController.m in Sources */,
 				A551612A159334190064E4ED /* GTSPageScrollView.m in Sources */,
+				A58682F1159495860048EE9E /* GTSPdfViewContainer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
