@@ -4,5 +4,6 @@
 
 @synthesize hidden;
 
-
+- (void)fetchValueIntoObject:(id)object {
+}
 @end

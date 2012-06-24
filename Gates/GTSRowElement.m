@@ -7,14 +7,22 @@
 @synthesize section;
 @synthesize delegate;
 
+@synthesize fetchKey;
+
 - (NSString *)cellReusableIdentifier {
 	return nil;
 }
 
 - (GTSFormCell *)getCellForTableView:(GTSFormTableView *)tableView {
-	GTSFormCell *cell = [tableView dequeueReusableCellWithIdentifier:[self cellReusableIdentifier]];
+	id cell = [tableView dequeueReusableCellWithIdentifier:[self cellReusableIdentifier]];
+    
+    NSLog(@"Cell is: %@", [cell description]);
+    if ([cell respondsToSelector:@selector(updateCellForElement:andTableView:)]) {
+        [cell performSelector:@selector(updateCellForElement:andTableView:) withObject:self withObject:tableView];
+    }
     
     return cell;
 }
+
 
 @end

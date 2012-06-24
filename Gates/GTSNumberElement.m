@@ -18,9 +18,9 @@
     return @"GTSNumberCellIdentifier";
 }
 
-- (GTSFormCell *)getCellForTableView:(GTSFormTableView *)tableView {
-    GTSNumberCell *cell = (GTSNumberCell *)[super getCellForTableView:tableView];
-    [cell updateCellForElement:self andTableView:tableView];
-    return cell;
+- (void)fetchValueIntoObject:(id)object {
+    if (self.fetchKey) {
+        [object setValue:self.number forKeyPath:self.fetchKey];
+    }
 }
 @end

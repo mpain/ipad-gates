@@ -32,6 +32,8 @@
 }
 
 - (void)updateCellFromElement {
+    [super updateCellFromElement];
+    
     [self updateFormatter];
     self.textValue.text = [[self numberElement].number description];//[_formatter stringFromNumber:[self numberElement].number];
 }

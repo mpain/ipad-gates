@@ -9,9 +9,4 @@
     return @"GTSLabelInfoCellIdentifier";
 }
 
-- (GTSFormCell *)getCellForTableView:(GTSFormTableView *)tableView {
-    GTSLabelInfoCell *cell = (GTSLabelInfoCell *)[super getCellForTableView:tableView];
-    [cell updateCellFromElement:self];
-    return cell;
-}
 @end

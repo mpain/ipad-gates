@@ -51,4 +51,37 @@
 	[cell setNeedsDisplay];
 }
 
+- (void)showOrHideElements:(NSArray *)elements {
+    NSMutableArray *insertIndices = [NSMutableArray array];
+    NSMutableArray *removeIndices = [NSMutableArray array];
+    
+    for (GTSRowElement *element in elements) {
+        if (element.section.isHidden) {
+            continue;
+        }
+        
+        NSInteger section = [form.sections indexOfObject:element.section];
+        NSInteger row = [element.section.elements indexOfObject:element];
+        NSIndexPath *path = [NSIndexPath indexPathForRow:row inSection:section];
+        if (element.isHidden) {
+            [removeIndices addObject:path];
+        } else {
+            [insertIndices addObject:path];
+        }
+        
+        if (!insertIndices.count && !removeIndices.count) {
+            return;
+        }
+        
+        [owner beginUpdates];
+        if (insertIndices.count) {
+            [owner insertRowsAtIndexPaths:insertIndices withRowAnimation:UITableViewScrollPositionBottom];
+        }
+        
+        if (removeIndices.count) {
+            [owner deleteRowsAtIndexPaths:removeIndices withRowAnimation:UITableViewRowAnimationTop];
+        }
+        [owner endUpdates];
+    }
+}
 @end

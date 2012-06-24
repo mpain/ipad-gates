@@ -129,6 +129,8 @@
 		A56D6FEA1578DFF500D01627 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56D6FEB1578DFF500D01627 /* MainStoryboard.storyboard */; };
 		A56D6FF115790EE000D01627 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56D6FF015790EDE00D01627 /* MobileCoreServices.framework */; };
 		A58682F1159495860048EE9E /* GTSPdfViewContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = A58682F0159495860048EE9E /* GTSPdfViewContainer.m */; };
+		A5C05856159719280035937A /* GTSBooleanElement.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C05855159719280035937A /* GTSBooleanElement.m */; };
+		A5C0585A15971D2B0035937A /* GTSBooleanCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C0585915971D2B0035937A /* GTSBooleanCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -367,6 +369,10 @@
 		A56D6FF015790EDE00D01627 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		A58682EF159495860048EE9E /* GTSPdfViewContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSPdfViewContainer.h; sourceTree = "<group>"; };
 		A58682F0159495860048EE9E /* GTSPdfViewContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSPdfViewContainer.m; sourceTree = "<group>"; };
+		A5C05854159719280035937A /* GTSBooleanElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSBooleanElement.h; sourceTree = "<group>"; };
+		A5C05855159719280035937A /* GTSBooleanElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSBooleanElement.m; sourceTree = "<group>"; };
+		A5C0585815971D2B0035937A /* GTSBooleanCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSBooleanCell.h; sourceTree = "<group>"; };
+		A5C0585915971D2B0035937A /* GTSBooleanCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSBooleanCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -719,6 +725,8 @@
 		A55D6066157A119C00DEFCF7 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				A5C0585815971D2B0035937A /* GTSBooleanCell.h */,
+				A5C0585915971D2B0035937A /* GTSBooleanCell.m */,
 				A561ADE2157B56A400AFBA24 /* GTSEditableCell.h */,
 				A561ADE3157B56A400AFBA24 /* GTSEditableCell.m */,
 				A55D606B157A1A3700DEFCF7 /* GTSFormCell.h */,
@@ -792,6 +800,8 @@
 		A55D608C157A499B00DEFCF7 /* Elements */ = {
 			isa = PBXGroup;
 			children = (
+				A5C05854159719280035937A /* GTSBooleanElement.h */,
+				A5C05855159719280035937A /* GTSBooleanElement.m */,
 				A535857D157BE241005FB7BC /* GTSEditableElement.h */,
 				A535857E157BE242005FB7BC /* GTSEditableElement.m */,
 				A55D608D157A49B900DEFCF7 /* GTSElement.h */,
@@ -1005,6 +1015,8 @@
 				A53E8196159315F60054022F /* GTSPdfViewController.m in Sources */,
 				A551612A159334190064E4ED /* GTSPageScrollView.m in Sources */,
 				A58682F1159495860048EE9E /* GTSPdfViewContainer.m in Sources */,
+				A5C05856159719280035937A /* GTSBooleanElement.m in Sources */,
+				A5C0585A15971D2B0035937A /* GTSBooleanCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

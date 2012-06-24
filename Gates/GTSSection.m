@@ -55,4 +55,9 @@
 	[self.elements addObject:element];
 }
 
+- (void)fetchValueIntoObject:(id)object {
+    for (GTSRowElement *element in elements) {
+        [element fetchValueIntoObject:(object)];
+    }
+}
 @end

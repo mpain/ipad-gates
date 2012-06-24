@@ -4,6 +4,7 @@
 
 @protocol GTSFormEngineDelegate <NSObject>
 - (void)reloadAnElement:(GTSRowElement *)element;
+- (void)showOrHideElements:(NSArray *)elements;
 @end
 
 

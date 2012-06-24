@@ -25,4 +25,9 @@
 	return [self.sections count];
 }
 
+- (void)fetchValueIntoObject:(id)object {
+    for (GTSSection *section in sections) {
+        [section fetchValueIntoObject:object];
+    }
+}
 @end

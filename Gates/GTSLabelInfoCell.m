@@ -4,15 +4,10 @@
 @implementation GTSLabelInfoCell
 
 @synthesize labelInfo;
-@synthesize element;
-
-- (void)updateCellFromElement:(GTSLabelInfoElement *)anElement {
-    self.element = anElement;
-    [self updateCellFromElement];
-}
 
 - (void)updateCellFromElement {
-    self.labelInfo.text = element.info;
+    self.labelInfo.text = ((GTSLabelInfoElement *)self.element).info;
+    [super updateCellFromElement];
 }
 
 

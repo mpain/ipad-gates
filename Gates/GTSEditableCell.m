@@ -11,8 +11,6 @@
 }
 
 @synthesize textValue;
-@synthesize element;
-@synthesize tableView;
 
 - (UIToolbar *)createActionBar {
     UIToolbar *toolbar = [UIToolbar new];
@@ -36,13 +34,12 @@
 }
 
 - (void)updateCellForElement:(GTSRowElement *)anElement andTableView:(GTSFormTableView *)aTableView {
-    self.element = anElement;
-    self.tableView = aTableView;
-	textValue.text = ((GTSEditableElement *)anElement).text;
+    textValue.text = ((GTSEditableElement *)anElement).text;
     textValue.inputAccessoryView = [self createActionBar];
     
+    [super updateCellForElement:anElement andTableView:aTableView];
+    
     [self updatePrevNextStatus];
-	[self updateCellFromElement];
 	[self notificateAboutValueWasChanged];
 }
 
@@ -53,7 +50,7 @@
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 50 * USEC_PER_SEC);
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void) {
-        [tableView scrollToRowAtIndexPath:[tableView indexForElement:element] atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
+        [self.tableView scrollToRowAtIndexPath:[self.tableView indexForElement:self.element] atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
     });
     
     
@@ -69,12 +66,6 @@
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     [self notificateAboutValueWasChanged];
     return YES;
-}
-
-- (void)notificateAboutValueWasChanged {
-	if ([self.element.delegate respondsToSelector:@selector(valueChangedForElement:)]) {
-        [self.element.delegate valueChangedForElement:element];
-    }
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
@@ -117,7 +108,7 @@
 		} else {
             dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 50 * USEC_PER_SEC);
             dispatch_after(popTime, dispatch_get_main_queue(), ^(void) {
-                UITableViewCell *aCell = [self.tableView cellForElement:element];
+                UITableViewCell *aCell = [self.tableView cellForElement:self.element];
                 if (aCell) {
                     [aCell becomeFirstResponder];
                 }

@@ -16,6 +16,8 @@
 @property (nonatomic, weak) GTSSection *section;
 @property (nonatomic, weak) id<GTSElementDelegate> delegate;
 
+@property (nonatomic, copy) NSString *fetchKey;
+
 @end
 
 

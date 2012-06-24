@@ -18,7 +18,7 @@
 	self.delegate = formDelegate;
 	
 
-	self.backgroundColor = [UIColor gtsTableBackgroundColor];
+	//self.backgroundColor = [UIColor gtsTableBackgroundColor];
 	self.separatorStyle = UITableViewCellSeparatorStyleNone;
 	/*
 	self.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"paper.png"]];

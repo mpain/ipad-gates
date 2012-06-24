@@ -3,15 +3,15 @@
 
 @implementation GTSEditableElement
 
+@synthesize text;
+
 - (NSString *)cellReusableIdentifier {
     return @"GTSEditableCellIdentifier";
 }
 
-- (GTSFormCell *)getCellForTableView:(GTSFormTableView *)tableView {
-    GTSEditableCell *cell = (GTSEditableCell*)[super getCellForTableView:tableView];
-    
-	[cell updateCellForElement:self andTableView:tableView];    
-    return cell;
+- (void)fetchValueIntoObject:(id)object {
+    if (self.fetchKey) {
+        [object setValue:self.text forKeyPath:self.fetchKey];
+    }
 }
-
 @end

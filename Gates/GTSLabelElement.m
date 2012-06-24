@@ -9,12 +9,5 @@
     return @"GTSLabelCellIdentifier";
 }
 
-- (GTSFormCell *)getCellForTableView:(GTSFormTableView *)tableView {
-    GTSLabelCell *cell = (GTSLabelCell*)[super getCellForTableView:tableView];
-    
-    cell.label.text = self.label;
-    
-    return cell;
-}
 
 @end

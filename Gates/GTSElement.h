@@ -4,4 +4,6 @@
 
 @property (nonatomic, assign, getter = isHidden) BOOL hidden;
 
+- (void)fetchValueIntoObject:(id)object;
+
 @end

@@ -34,6 +34,7 @@
 - (void)updateCellFromElement {
 	self.textValue.text = self.pickerElement.text;
 	[self setPickerViewValue:self.pickerElement.text];
+    [super updateCellFromElement];
 }
 
 
@@ -69,7 +70,7 @@
 
 #pragma mark - Getting/setting value from UIPickerView
 
-- (NSString *)getPickerViewValue {
+- (NSArray *)getSelectedIndices {
     NSMutableArray *componentsValues = [NSMutableArray array];
     
     for (int i = 0; i < _pickerView.numberOfComponents; i++) {
@@ -81,7 +82,11 @@
         }
     }
 	
-    return [self.pickerElement.valueParser objectFromComponentsValues:componentsValues];
+    return componentsValues;
+}
+
+- (NSString *)getPickerViewValue {
+    return [self.pickerElement.valueParser objectFromComponentsValues:[self getSelectedIndices]];
 }
 
 - (void)setPickerViewValue:(NSString *)value {

@@ -8,6 +8,7 @@
 @synthesize valueParser = _valueParser;
 
 @synthesize selectedItems = _selectedItems;
+@synthesize selectedIndices = _selectedIndices;
 
 - (id)init {
 	self = [super init];
@@ -30,11 +31,10 @@
     return @"GTSPickerCellIdentifier";
 }
 
-- (GTSPickerCell *)getCellForTableView:(GTSFormTableView *)tableView {
-    GTSPickerCell *cell = (GTSPickerCell *)[super getCellForTableView:tableView];
-    [cell updateCellForElement:self andTableView:tableView];
-    return cell;
+- (void)fetchValueIntoObject:(id)object {
+    if (self.fetchKey) {
+        [object setValue:self.selectedIndices forKeyPath:self.fetchKey];
+    }
 }
-
 
 @end
