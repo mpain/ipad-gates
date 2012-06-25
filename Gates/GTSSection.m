@@ -32,9 +32,30 @@
 	return visibleCount;
 }
 
+- (NSInteger)visibleIndexOfElement:(GTSRowElement *)element {
+	__block NSInteger result = NSNotFound;
+	__block NSInteger visibleIndex = 0;
+	
+	[self.elements enumerateObjectsUsingBlock:^(id object, NSUInteger idx, BOOL *stop) {
+		GTSRowElement *current = (GTSRowElement *)object;
+		if (!current.hidden) {
+			if (current == element) {
+				result = visibleIndex;
+				*stop = YES;
+			} else {
+				visibleIndex++;
+			}
+		}
+	}];
+	
+	return result;
+}
+
+
 - (GTSRowElement *)elementAtIndex:(NSInteger)index {
 	__block GTSRowElement *result = nil;
 	__block NSInteger visibleIndex = 0;
+	
 	[self.elements enumerateObjectsUsingBlock:^(id object, NSUInteger idx, BOOL *stop) {
 		GTSRowElement *current = (GTSRowElement *)object;
 		if (!current.hidden) {
@@ -47,6 +68,7 @@
 		}
 	}];
 	
+	NSLog(@"section element at index: %d => %@", index, result);
 	return result;
 }
 

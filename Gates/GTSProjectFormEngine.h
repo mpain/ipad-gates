@@ -4,7 +4,7 @@
 
 @protocol GTSFormEngineDelegate <NSObject>
 - (void)reloadAnElement:(GTSRowElement *)element;
-- (void)showOrHideElements:(NSArray *)elements;
+- (void)showElements:(NSArray *)elementsToShow hideElements:(NSArray *)elementsToHide;
 @end
 
 
@@ -14,5 +14,6 @@
 @property (nonatomic, weak) id<GTSFormEngineDelegate> delegate;
 
 + (GTSProjectFormEngine *)sharedInstance;
+- (void)build;
 
 @end

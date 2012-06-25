@@ -7,7 +7,6 @@
 @synthesize items = _items;
 @synthesize valueParser = _valueParser;
 
-@synthesize selectedItems = _selectedItems;
 @synthesize selectedIndices = _selectedIndices;
 
 - (id)init {

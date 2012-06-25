@@ -65,6 +65,7 @@
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     self.pickerElement.text = [self getPickerViewValue];
     [self updateCellFromElement];
+	[self notificateAboutValueWasChanged];
 	[self setNeedsDisplay];
 }
 
@@ -86,7 +87,9 @@
 }
 
 - (NSString *)getPickerViewValue {
-    return [self.pickerElement.valueParser objectFromComponentsValues:[self getSelectedIndices]];
+	NSArray *selections = [self getSelectedIndices];
+	self.pickerElement.selectedIndices = selections;
+    return [self.pickerElement.valueParser objectFromComponentsValues:selections];
 }
 
 - (void)setPickerViewValue:(NSString *)value {

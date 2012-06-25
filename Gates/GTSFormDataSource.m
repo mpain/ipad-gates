@@ -9,7 +9,11 @@
 	__weak GTSFormTableView *owner;
 }
 
-@synthesize form;
+@synthesize form = _form;
+
+- (GTSForm *)form {
+	return [[GTSProjectFormEngine sharedInstance] form];
+}
 
 - (id)initWithTableView:(GTSFormTableView *)aTableView {
     self = [super init];
@@ -17,29 +21,28 @@
 		owner = aTableView;
 		
 		GTSProjectFormEngine *engine = [GTSProjectFormEngine sharedInstance];
-        form = engine.form;
 		engine.delegate = self;
     }
     return self;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-	return [form sectionsCount];	
+	return [self.form sectionsCount];
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-	return [[form.sections objectAtIndex:section] title];
+	return [[self.form.sections objectAtIndex:section] title];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	GTSSection *formSection = [form.sections objectAtIndex:section];
+	GTSSection *formSection = [self.form.sections objectAtIndex:section];
 	return formSection.hidden? 0 : formSection.visibleElementsCount;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)aTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	GTSFormTableView *table = [self convertToTableView:aTableView];
     
-    GTSSection *section = [form.sections objectAtIndex:indexPath.section];
+    GTSSection *section = [self.form.sections objectAtIndex:indexPath.section];
     GTSRowElement *element = [section elementAtIndex:indexPath.row];
     
     return [element getCellForTableView:table];
@@ -51,37 +54,54 @@
 	[cell setNeedsDisplay];
 }
 
-- (void)showOrHideElements:(NSArray *)elements {
-    NSMutableArray *insertIndices = [NSMutableArray array];
+- (void)showElements:(NSArray *)elementsToShow hideElements:(NSArray *)elementsToHide {
+	NSLog(@"show : %@, hide: %@", elementsToShow, elementsToHide);
+	
     NSMutableArray *removeIndices = [NSMutableArray array];
-    
-    for (GTSRowElement *element in elements) {
-        if (element.section.isHidden) {
-            continue;
-        }
-        
-        NSInteger section = [form.sections indexOfObject:element.section];
-        NSInteger row = [element.section.elements indexOfObject:element];
+    for (GTSRowElement *element in elementsToHide) {
+        NSInteger section = [self.form.sections indexOfObject:element.section];
+		
+        NSInteger row = [element.section visibleIndexOfElement:element];
         NSIndexPath *path = [NSIndexPath indexPathForRow:row inSection:section];
-        if (element.isHidden) {
-            [removeIndices addObject:path];
-        } else {
-            [insertIndices addObject:path];
-        }
         
-        if (!insertIndices.count && !removeIndices.count) {
-            return;
-        }
-        
-        [owner beginUpdates];
-        if (insertIndices.count) {
-            [owner insertRowsAtIndexPaths:insertIndices withRowAnimation:UITableViewScrollPositionBottom];
-        }
-        
-        if (removeIndices.count) {
-            [owner deleteRowsAtIndexPaths:removeIndices withRowAnimation:UITableViewRowAnimationTop];
-        }
-        [owner endUpdates];
+		if (!element.section.isHidden) {
+			[removeIndices addObject:path];
+		}
     }
+	
+	for (GTSRowElement *element in elementsToHide) {
+        element.hidden = YES;
+    }
+	
+	for (GTSRowElement *element in elementsToShow) {
+        element.hidden = NO;
+    }
+	
+	NSMutableArray *insertIndices = [NSMutableArray array];
+	for (GTSRowElement *element in elementsToShow) {
+        NSInteger section = [self.form.sections indexOfObject:element.section];
+		
+        NSInteger row = [element.section visibleIndexOfElement:element];
+        NSIndexPath *path = [NSIndexPath indexPathForRow:row inSection:section];
+        
+		if (!element.section.isHidden) {
+			[insertIndices addObject:path];
+		}
+    }
+
+	if (!insertIndices.count && !removeIndices.count) {
+		return;
+	}
+
+	NSLog(@"insert : %@, delete: %@", insertIndices, removeIndices);
+	[owner beginUpdates];
+	if (insertIndices.count) {
+		[owner insertRowsAtIndexPaths:insertIndices withRowAnimation:UITableViewScrollPositionBottom];
+	}
+	
+	if (removeIndices.count) {
+		[owner deleteRowsAtIndexPaths:removeIndices withRowAnimation:UITableViewRowAnimationTop];
+	}
+	[owner endUpdates];
 }
 @end

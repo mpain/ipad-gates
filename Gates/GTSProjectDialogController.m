@@ -1,5 +1,6 @@
 #import "GTSProjectDialogController.h"
 #import "GTSAppDelegate.h"
+#import "GTSProjectFormEngine.h"
 #import <MobileCoreServices/MobileCoreServices.h>
 
 @interface GTSProjectDialogController ()
@@ -28,7 +29,12 @@
 	self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:addButton, space, removeButton, space2, refreshButton, nil];
 }
 
-- (void)viewWillAppear:(BOOL)animated { 
+- (void)refreshItem {
+	[[GTSProjectFormEngine sharedInstance] build];
+	[self.tableView reloadData];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
 	
     [super viewWillAppear:animated]; 
 	[self createNavigationBarButtons];

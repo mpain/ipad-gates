@@ -13,4 +13,5 @@
 - (NSInteger) visibleElementsCount;
 - (void)addElement:(GTSRowElement *)element;
 - (GTSRowElement *)elementAtIndex:(NSInteger)index;
+- (NSInteger)visibleIndexOfElement:(GTSRowElement *)element;
 @end

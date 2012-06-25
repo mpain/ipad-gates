@@ -23,7 +23,7 @@
 - (void)createSubviews {
 	self.backgroundColor = [UIColor gtsTableHeaderBackgroundColor];
 	
-	CGRect labelFrame = CGRectInset(self.bounds, 15, 15);
+	CGRect labelFrame = CGRectInset(self.bounds, 15, 5);
 	_textLabel = [[UILabel alloc] initWithFrame:labelFrame];
 	_textLabel.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 	_textLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:18.0f];

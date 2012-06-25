@@ -3,7 +3,7 @@
 #import "GTSForm.h"
 #import "GTSSection.h"
 
-#define kHeaderHeight 44.0f
+#define kHeaderHeight 36.0f
 
 @implementation GTSFormTableViewDelegate {
 	__weak GTSFormTableView *_owner;
