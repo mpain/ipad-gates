@@ -3,11 +3,11 @@
 @implementation GTSPickerSpacedParser
 
 - (NSString *)objectFromComponentsValues:(NSArray *)componentsValues {
-    return [componentsValues componentsJoinedByString:@" "];
+    return [componentsValues componentsJoinedByString:@"|"];
 }
 
 - (NSArray *)componentsValuesFromObject:(NSString *)stringValue {
-    return [stringValue componentsSeparatedByString:@" "];
+    return [stringValue componentsSeparatedByString:@"|"];
 }
 
 @end

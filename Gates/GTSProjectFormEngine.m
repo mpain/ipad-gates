@@ -47,7 +47,6 @@
 													  NSLocalizedString(@"MATHERIAL_CONCRETE", nil),
 													  NSLocalizedString(@"MATHERIAL_WOOD", nil),
 													  NSLocalizedString(@"MATHERIAL_BRICK", nil),
-													  NSLocalizedString(@"MATHERIAL_BRICK", nil),
 													  NSLocalizedString(@"MATHERIAL_AIR_BRICK", nil),
 													  NSLocalizedString(@"MATHERIAL_METAL", nil), nil]];
 		_commonPanelDesignTypes = [NSArray arrayWithObject:[NSArray arrayWithObjects:
@@ -95,10 +94,6 @@
 	[self editableElementWithLabel:@"PROJECT_COMMON_CUSTOMER_NAME" section:section];
 	[self editableElementWithLabel:@"PROJECT_COMMON_CUSTOMER_PHONE" section:section];
 	
-	[self pickerElementWithLabel:@"PROJECT_COMMON_CUSTOMER_PICKER" section:section items:[NSArray arrayWithObject:[NSArray arrayWithObjects:@"First", @"Second", @"Third", @"Fourth", nil]]];
-	
-    _gatesBooleanElement = [self booleanElementWithLabel:@"TEST_BOOLEAN" section:section needToSetDelegate:YES];
-    _gatesBooleanElement.on = YES;
 	return section;
 }
 
@@ -166,7 +161,7 @@
 	[self pickerElementWithLabel:@"PROJECT_SANDWICH_PANEL_OUTER_STRUCTURE" section:section items:_commonPanelStructure];
 	
 	[panel removeAllObjects];
-    [panel addObject:[self pickerElementWithLabel:[NSString stringWithFormat:@"PROJECT_SANDWICH_PANEL_%@_STRUCTURE", prefix] section:section items:_commonPanelColor]];
+    [panel addObject:[self pickerElementWithLabel:[NSString stringWithFormat:@"PROJECT_SANDWICH_PANEL_%@_COLOR", prefix] section:section items:_commonPanelColor]];
 	[panel addObject:[self pickerElementWithLabel:@"COLOR_DEFAULT" section:section items:_commonPanelColor]];
 	[panel addObject:[self pickerElementWithLabel:@"COLOR_CUSTOM" section:section items:_commonPanelColor hidden:YES]];
 	[panel addObject:[self pickerElementWithLabel:@"COLOR_WOOD" section:section items:_commonPanelColor hidden:YES]];
@@ -228,8 +223,6 @@
 }
 
 - (void)valueChangedForElement:(GTSRowElement *)element {
-    NSLog(@"Value was changed for an element: %@", [element description]);
-    
     if ((element == gatesWidthElement || element == gatesHeightElement) && 
                 (gatesHeightElement.number && gatesWidthElement.number)) {
         NSDecimalNumber *surface = [[gatesWidthElement.number decimalNumberByMultiplyingBy:gatesHeightElement.number] decimalNumberByDividingBy:_oneMillion];

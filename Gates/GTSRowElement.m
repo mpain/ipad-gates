@@ -16,7 +16,6 @@
 - (GTSFormCell *)getCellForTableView:(GTSFormTableView *)tableView {
 	id cell = [tableView dequeueReusableCellWithIdentifier:[self cellReusableIdentifier]];
     
-    NSLog(@"Cell is: %@", [cell description]);
     if ([cell respondsToSelector:@selector(updateCellForElement:andTableView:)]) {
         [cell performSelector:@selector(updateCellForElement:andTableView:) withObject:self withObject:tableView];
     }

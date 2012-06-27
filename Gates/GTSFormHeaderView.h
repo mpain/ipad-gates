@@ -4,6 +4,7 @@
 
 @interface GTSFormHeaderView : UIControl
 
+@property (nonatomic, strong) UIImageView *imageView;
 @property (nonatomic, strong) UILabel *textLabel;
 @property (nonatomic, assign) NSInteger section;
 @property (nonatomic, assign, getter = isOpen) BOOL open;

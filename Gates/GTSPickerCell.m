@@ -23,7 +23,6 @@
 	_pickerView.delegate = self;
 	
 	_pickerHost.frame = _pickerView.frame;
-	NSLog(@"Frame: %f %f %f %f", _pickerView.frame.origin.x, _pickerView.frame.origin.y, _pickerView.frame.size.width, _pickerView.frame.size.height);
 	
 	[_pickerHost addSubview:_pickerView];
 	self.textValue.inputView = _pickerHost;

@@ -1,16 +1,70 @@
 "TEST" = "Тест!!!";
 "TAB_BAR_PROJECTS" = "Проекты";
 
-"PROJECT_SECTION_FURNISHING" = "Комплектация заказа";
-"PROJECT_FURNISH_TYPE" = "Комплектация";
-"PROJECT_FURNISH_TYPE_FULL" = "Полная";
-"PROJECT_FURNISH_TYPE_GATES" = "Только щит ворот";
-"PROJECT_FURNISH_TYPE_GUIDES" = "Только направляющие ворот";
+"PROJECT_SECTION_COMMON" = "Информация о проекте";
+"PROJECT_COMMON_TITLE" = "Наименование";
+"PROJECT_COMMON_ADDRESS" = "Адрес";
+"PROJECT_COMMON_CUSTOMER_NAME" = "Заказчик";
+"PROJECT_COMMON_CUSTOMER_PHONE" = "Контактный телефон";
+
+"PROJECT_SECTION_PACKAGING" = "Комплектация заказа";
+"PROJECT_PACKAGING_TYPE" = "Комплектация";
+"PROJECT_PACKAGING_TYPE_FULL" = "Полная";
+"PROJECT_PACKAGING_TYPE_GATES" = "Только щит ворот";
+"PROJECT_PACKAGING_TYPE_RULERS" = "Только направляющие ворот";
 
 "PROJECT_SECTION_DIMENTIONS" = "Размеры проема";
 "PROJECT_GATES_WIDTH" = "Ширина (Ш), мм";
 "PROJECT_GATES_HEIGHT" = "Высота (В), мм";
 "PROJECT_GATES_SURFACE" = "Площадь проема, м2";
+
+"PROJECT_SECTION_DESIGN_FEATURES" = "Особенности дизайна";
+"PROJECT_DESIGN_FEATURE_LINTEL" =  "Притолока (h), мм";
+"PROJECT_DESIGN_FEATURE_PARTITION_LEFT" = "Левый пристенок (b1), мм";
+"PROJECT_DESIGN_FEATURE_PARTITION_RIGHT" = "Правый пристенок (b2), мм";
+"PROJECT_DESIGN_FEATURE_ROOM_DEPTH" = "Глубина помещения (L) мм";
+
+"PROJECT_DESIGN_FEATURE_WALL_MATHERIAL" = "Материал стен";
+"PROJECT_DESIGN_FEATURE_CEILING_MATHERIAL" = "Материал потолка";
+"PROJECT_DESIGN_FEATURE_LINTEL_MATHERIAL" = "Матириал притолоки";
+
+"PROJECT_SECTION_SANDWICH_PANELS" = "Сэндвич-панели";
+"PROJECT_SANDWICH_PANEL_DEFENCE" = "С защитой от защемления пальцев";
+"PROJECT_SANDWICH_PANEL_OUTER_DESIGN" = "Дизайн с внешней стороны";
+"PROJECT_SANDWICH_PANEL_OUTER_STRUCTURE" = "Структура с внешней стороны";
+"PROJECT_SANDWICH_PANEL_OUTER_COLOR" = "Цвет с внешней стороны";
+
+"PROJECT_SANDWICH_PANEL_INNER_DESIGN" = "Дизайн с внутренней стороны";
+"PROJECT_SANDWICH_PANEL_INNER_STRUCTURE" = "Структура с внутренней стороны";
+"PROJECT_SANDWICH_PANEL_INNER_COLOR" = "Цвет с внутренней стороны";
+
+"COLOR_DEFAULT" = "Стандартный (RAL)";
+"COLOR_CUSTOM" = "Нестандартный";
+"COLOR_WOOD" = "Имитации дерева";
+"COLOR_USER" = "Индивидуальный (по образцу)";
+
+"PANEL_COLOR_DEFAULT" = "Стандартный (RAL)";
+"PANEL_COLOR_CUSTOM" = "Нестандартный";
+"PANEL_COLOR_WOOD" = "Имитации дерева";
+"PANEL_COLOR_USER" = "Индивидуальный (по образцу)";
+
+"PANEL_STRUCTURE_SMOOTH" = "Гладкий";
+"PANEL_STUCCO" = "Стукко (stucco)";
+"PANEL_WOOD" = "Под дерево";
+
+"MATHERIAL_CONCRETE" = "Бетон";
+"MATHERIAL_WOOD" = "Дерево";
+"MATHERIAL_BRICK" = "Кирпич";
+"MATHERIAL_AIR_BRICK" = "Пустотелый кирпич";
+"MATHERIAL_METAL" = "Металл";
+
+"PANEL_TYPE_CLASSIC" = "Гофра (классический)";
+"PANEL_SMOOTH_SURFACE" = "Гладкий лист (без зигов)";
+"PANEL_CENTRAL_LINE" = "С центральной полосой";
+"PANEL_WAVE" = "Волна";
+"PANEL_WAVE_CENTRAL_LINE" = "Волна с центральной полосой";
+"PANEL_PANEL" = "Филенка";
+
 
 "ACTIONBAR_PREVIOUS" = "Назад";
 "ACTIONBAR_NEXT" = "Далее";
@@ -18,6 +72,10 @@
 
 "CATALOG_TITLE" = "Каталог";
 "PROJECTS_TITLE" = "Проекты";
+
+
+
+
 
 "GRID_OPTS" = "Настройки";
 "GRID_OPTS_GENERAL" = "Оновные";

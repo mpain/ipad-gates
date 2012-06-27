@@ -12,7 +12,6 @@
 	GTSAppDelegate *application = (GTSAppDelegate *)[[UIApplication sharedApplication] delegate];
 	
 	[self pushToMasterController:[application.storyboard instantiateViewControllerWithIdentifier:@"MasterViewController"]];
-	
 	GTSProjectDialogController *controller = [application.storyboard instantiateViewControllerWithIdentifier:@"DetailViewController"];
 	self.title = controller.title;
 	[self pushToDetailController:controller];

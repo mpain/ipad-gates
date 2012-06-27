@@ -68,7 +68,6 @@
 		}
 	}];
 	
-	NSLog(@"section element at index: %d => %@", index, result);
 	return result;
 }
 

@@ -129,8 +129,23 @@
 		A56D6FEA1578DFF500D01627 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56D6FEB1578DFF500D01627 /* MainStoryboard.storyboard */; };
 		A56D6FF115790EE000D01627 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56D6FF015790EDE00D01627 /* MobileCoreServices.framework */; };
 		A58682F1159495860048EE9E /* GTSPdfViewContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = A58682F0159495860048EE9E /* GTSPdfViewContainer.m */; };
+		A5A2FCF1159B51050034E158 /* arrow-up.png in Resources */ = {isa = PBXBuildFile; fileRef = A5A2FCED159B51050034E158 /* arrow-up.png */; };
+		A5A2FCF2159B51050034E158 /* arrow-up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5A2FCEE159B51050034E158 /* arrow-up@2x.png */; };
+		A5A2FCF3159B51050034E158 /* arrow-down.png in Resources */ = {isa = PBXBuildFile; fileRef = A5A2FCEF159B51050034E158 /* arrow-down.png */; };
+		A5A2FCF4159B51050034E158 /* arrow-down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5A2FCF0159B51050034E158 /* arrow-down@2x.png */; };
+		A5A2FCF8159B5A200034E158 /* edit-background.png in Resources */ = {isa = PBXBuildFile; fileRef = A5A2FCF6159B5A200034E158 /* edit-background.png */; };
+		A5A2FCF9159B5A200034E158 /* edit-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5A2FCF7159B5A200034E158 /* edit-background@2x.png */; };
 		A5C05856159719280035937A /* GTSBooleanElement.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C05855159719280035937A /* GTSBooleanElement.m */; };
 		A5C0585A15971D2B0035937A /* GTSBooleanCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C0585915971D2B0035937A /* GTSBooleanCell.m */; };
+		A5DDA656159AF471003EE06A /* GTSProjectListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DDA655159AF471003EE06A /* GTSProjectListViewController.m */; };
+		A5DDA65C159AF74F003EE06A /* GTSProjectsService.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DDA65B159AF74F003EE06A /* GTSProjectsService.m */; };
+		A5DDA65F159AFCDE003EE06A /* GTSProject.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DDA65E159AFCDE003EE06A /* GTSProject.m */; };
+		A5DDA665159B1281003EE06A /* Jastor.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DDA662159B1281003EE06A /* Jastor.m */; };
+		A5DDA666159B1281003EE06A /* JastorRuntimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DDA664159B1281003EE06A /* JastorRuntimeHelper.m */; };
+		A5DDA66B159B26EA003EE06A /* history.png in Resources */ = {isa = PBXBuildFile; fileRef = A5DDA667159B26EA003EE06A /* history.png */; };
+		A5DDA66C159B26EA003EE06A /* history@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5DDA668159B26EA003EE06A /* history@2x.png */; };
+		A5DDA66D159B26EA003EE06A /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = A5DDA669159B26EA003EE06A /* menu.png */; };
+		A5DDA66E159B26EA003EE06A /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5DDA66A159B26EA003EE06A /* menu@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -369,10 +384,30 @@
 		A56D6FF015790EDE00D01627 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		A58682EF159495860048EE9E /* GTSPdfViewContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSPdfViewContainer.h; sourceTree = "<group>"; };
 		A58682F0159495860048EE9E /* GTSPdfViewContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSPdfViewContainer.m; sourceTree = "<group>"; };
+		A5A2FCED159B51050034E158 /* arrow-up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow-up.png"; path = "resources/images/arrow-up.png"; sourceTree = "<group>"; };
+		A5A2FCEE159B51050034E158 /* arrow-up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow-up@2x.png"; path = "resources/images/arrow-up@2x.png"; sourceTree = "<group>"; };
+		A5A2FCEF159B51050034E158 /* arrow-down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow-down.png"; path = "resources/images/arrow-down.png"; sourceTree = "<group>"; };
+		A5A2FCF0159B51050034E158 /* arrow-down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow-down@2x.png"; path = "resources/images/arrow-down@2x.png"; sourceTree = "<group>"; };
+		A5A2FCF6159B5A200034E158 /* edit-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "edit-background.png"; path = "resources/images/edit-background.png"; sourceTree = "<group>"; };
+		A5A2FCF7159B5A200034E158 /* edit-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "edit-background@2x.png"; path = "resources/images/edit-background@2x.png"; sourceTree = "<group>"; };
 		A5C05854159719280035937A /* GTSBooleanElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSBooleanElement.h; sourceTree = "<group>"; };
 		A5C05855159719280035937A /* GTSBooleanElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSBooleanElement.m; sourceTree = "<group>"; };
 		A5C0585815971D2B0035937A /* GTSBooleanCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSBooleanCell.h; sourceTree = "<group>"; };
 		A5C0585915971D2B0035937A /* GTSBooleanCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSBooleanCell.m; sourceTree = "<group>"; };
+		A5DDA654159AF471003EE06A /* GTSProjectListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSProjectListViewController.h; sourceTree = "<group>"; };
+		A5DDA655159AF471003EE06A /* GTSProjectListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSProjectListViewController.m; sourceTree = "<group>"; };
+		A5DDA65A159AF74F003EE06A /* GTSProjectsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSProjectsService.h; sourceTree = "<group>"; };
+		A5DDA65B159AF74F003EE06A /* GTSProjectsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSProjectsService.m; sourceTree = "<group>"; };
+		A5DDA65D159AFCDE003EE06A /* GTSProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSProject.h; sourceTree = "<group>"; };
+		A5DDA65E159AFCDE003EE06A /* GTSProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSProject.m; sourceTree = "<group>"; };
+		A5DDA661159B1281003EE06A /* Jastor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Jastor.h; path = external/jastor/Jastor.h; sourceTree = "<group>"; };
+		A5DDA662159B1281003EE06A /* Jastor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Jastor.m; path = external/jastor/Jastor.m; sourceTree = "<group>"; };
+		A5DDA663159B1281003EE06A /* JastorRuntimeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JastorRuntimeHelper.h; path = external/jastor/JastorRuntimeHelper.h; sourceTree = "<group>"; };
+		A5DDA664159B1281003EE06A /* JastorRuntimeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JastorRuntimeHelper.m; path = external/jastor/JastorRuntimeHelper.m; sourceTree = "<group>"; };
+		A5DDA667159B26EA003EE06A /* history.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = history.png; path = resources/images/history.png; sourceTree = "<group>"; };
+		A5DDA668159B26EA003EE06A /* history@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "history@2x.png"; path = "resources/images/history@2x.png"; sourceTree = "<group>"; };
+		A5DDA669159B26EA003EE06A /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu.png; path = resources/images/menu.png; sourceTree = "<group>"; };
+		A5DDA66A159B26EA003EE06A /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu@2x.png"; path = "resources/images/menu@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -432,14 +467,16 @@
 				A55C7A1D157CA771000D834F /* Temporary */,
 				A55D6099157A581A00DEFCF7 /* Common */,
 				A55D6082157A402900DEFCF7 /* Components */,
-				A55D606E157A26F200DEFCF7 /* Form */,
 				A50EBBD11577854000BD9C60 /* Controllers */,
+				A5DDA659159AF620003EE06A /* Data */,
+				A55D606E157A26F200DEFCF7 /* Form */,
 				A50EBB1215777D8600BD9C60 /* External */,
 				A50EBAF115764C1C00BD9C60 /* GTSAppDelegate.h */,
 				A50EBAF215764C1C00BD9C60 /* GTSAppDelegate.m */,
 				A56D6FEB1578DFF500D01627 /* MainStoryboard.storyboard */,
 				A50EBAF715764C1C00BD9C60 /* Gates.xcdatamodeld */,
 				A54C87FD1578A55A002B1116 /* Resources */,
+				A5DDA658159AF484003EE06A /* Services */,
 				A50EBAE915764C1C00BD9C60 /* Supporting Files */,
 			);
 			path = Gates;
@@ -460,6 +497,7 @@
 		A50EBB1215777D8600BD9C60 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				A5DDA660159B1274003EE06A /* Jastor */,
 				A55C7A0B157CA753000D834F /* GMGridView */,
 				A50EBBC2157780E200BD9C60 /* SplitView */,
 				A50EBB1315777D8F00BD9C60 /* QuickDialog */,
@@ -618,6 +656,8 @@
 				A54C87F61577CF84002B1116 /* GTSMainSplitViewController.m */,
 				A56D6FE61578B96F00D01627 /* GTSProjectDialogController.h */,
 				A56D6FE71578B96F00D01627 /* GTSProjectDialogController.m */,
+				A5DDA654159AF471003EE06A /* GTSProjectListViewController.h */,
+				A5DDA655159AF471003EE06A /* GTSProjectListViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -776,6 +816,16 @@
 		A55D607A157A372800DEFCF7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				A5A2FCF6159B5A200034E158 /* edit-background.png */,
+				A5A2FCF7159B5A200034E158 /* edit-background@2x.png */,
+				A5A2FCED159B51050034E158 /* arrow-up.png */,
+				A5A2FCEE159B51050034E158 /* arrow-up@2x.png */,
+				A5A2FCEF159B51050034E158 /* arrow-down.png */,
+				A5A2FCF0159B51050034E158 /* arrow-down@2x.png */,
+				A5DDA667159B26EA003EE06A /* history.png */,
+				A5DDA668159B26EA003EE06A /* history@2x.png */,
+				A5DDA669159B26EA003EE06A /* menu.png */,
+				A5DDA66A159B26EA003EE06A /* menu@2x.png */,
 				A55C7A31157CB811000D834F /* calculator-icon.png */,
 				A55C7A32157CB811000D834F /* calculator-icon@2x.png */,
 				A55C7A2F157CB6D5000D834F /* close-x.png */,
@@ -836,6 +886,35 @@
 				A55D609B157A583800DEFCF7 /* GTSProjectFormEngine.m */,
 			);
 			name = Common;
+			sourceTree = "<group>";
+		};
+		A5DDA658159AF484003EE06A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A5DDA65A159AF74F003EE06A /* GTSProjectsService.h */,
+				A5DDA65B159AF74F003EE06A /* GTSProjectsService.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		A5DDA659159AF620003EE06A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A5DDA65D159AFCDE003EE06A /* GTSProject.h */,
+				A5DDA65E159AFCDE003EE06A /* GTSProject.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		A5DDA660159B1274003EE06A /* Jastor */ = {
+			isa = PBXGroup;
+			children = (
+				A5DDA661159B1281003EE06A /* Jastor.h */,
+				A5DDA662159B1281003EE06A /* Jastor.m */,
+				A5DDA663159B1281003EE06A /* JastorRuntimeHelper.h */,
+				A5DDA664159B1281003EE06A /* JastorRuntimeHelper.m */,
+			);
+			name = Jastor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -903,6 +982,16 @@
 				A55C7A34157CB811000D834F /* calculator-icon@2x.png in Resources */,
 				A55C7A3C157CBDCA000D834F /* CalculatorView.xib in Resources */,
 				A53E819815931B210054022F /* booklet.pdf in Resources */,
+				A5DDA66B159B26EA003EE06A /* history.png in Resources */,
+				A5DDA66C159B26EA003EE06A /* history@2x.png in Resources */,
+				A5DDA66D159B26EA003EE06A /* menu.png in Resources */,
+				A5DDA66E159B26EA003EE06A /* menu@2x.png in Resources */,
+				A5A2FCF1159B51050034E158 /* arrow-up.png in Resources */,
+				A5A2FCF2159B51050034E158 /* arrow-up@2x.png in Resources */,
+				A5A2FCF3159B51050034E158 /* arrow-down.png in Resources */,
+				A5A2FCF4159B51050034E158 /* arrow-down@2x.png in Resources */,
+				A5A2FCF8159B5A200034E158 /* edit-background.png in Resources */,
+				A5A2FCF9159B5A200034E158 /* edit-background@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1017,6 +1106,11 @@
 				A58682F1159495860048EE9E /* GTSPdfViewContainer.m in Sources */,
 				A5C05856159719280035937A /* GTSBooleanElement.m in Sources */,
 				A5C0585A15971D2B0035937A /* GTSBooleanCell.m in Sources */,
+				A5DDA656159AF471003EE06A /* GTSProjectListViewController.m in Sources */,
+				A5DDA65C159AF74F003EE06A /* GTSProjectsService.m in Sources */,
+				A5DDA65F159AFCDE003EE06A /* GTSProject.m in Sources */,
+				A5DDA665159B1281003EE06A /* Jastor.m in Sources */,
+				A5DDA666159B1281003EE06A /* JastorRuntimeHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,6 +12,11 @@
 
 @synthesize textValue;
 
+- (void)awakeFromNib {
+	self.textValue.background = [[UIImage imageNamed:@"edit-background.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(6, 6, 6, 6)];
+	self.textValue.borderStyle = UITextBorderStyleNone;
+}
+
 - (UIToolbar *)createActionBar {
     UIToolbar *toolbar = [UIToolbar new];
     toolbar.translucent = YES;

@@ -19,7 +19,8 @@
 	
 
 	//self.backgroundColor = [UIColor gtsTableBackgroundColor];
-	self.separatorStyle = UITableViewCellSeparatorStyleNone;
+	self.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+	self.separatorColor = [UIColor lightGrayColor];
 	/*
 	self.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"paper.png"]];
 	self.backgroundView.contentMode = UIViewContentModeTopLeft;
@@ -30,21 +31,20 @@
     return [(GTSFormDataSource *)formDataSource form];
 }
 
-- (NSIndexPath *)indexForElement:(GTSElement *)element {
+- (NSIndexPath *)indexForElement:(GTSRowElement *)element {
     for (NSInteger i = 0; i < [self.form.sections count]; i++) {
         GTSSection *currSection = [self.form.sections objectAtIndex:i];
         
-        for (int j = 0; j < [currSection.elements count]; j++) {
-            GTSElement *currElement = [currSection.elements objectAtIndex:j];
-            if (currElement == element) {
-                return [NSIndexPath indexPathForRow:j inSection:i];
-            }
-        }
+		NSInteger row = [currSection visibleIndexOfElement:element];
+		if (row != NSNotFound) {
+			return [NSIndexPath indexPathForRow:row inSection:i];
+		}
+        
     }
-    return NULL;
+    return nil;
 }
 
-- (UITableViewCell *)cellForElement:(GTSElement *)element {
+- (UITableViewCell *)cellForElement:(GTSRowElement *)element {
     return [self cellForRowAtIndexPath:[self indexForElement:element]];
 }
 @end

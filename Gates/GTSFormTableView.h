@@ -1,12 +1,12 @@
 #import <UIKit/UIKit.h>
 
-@class GTSElement;
+@class GTSRowElement;
 @class GTSForm;
 
 @interface GTSFormTableView : UITableView
 
-- (NSIndexPath *)indexForElement:(GTSElement *)element;
-- (UITableViewCell *)cellForElement:(GTSElement *)element;
+- (NSIndexPath *)indexForElement:(GTSRowElement *)element;
+- (UITableViewCell *)cellForElement:(GTSRowElement *)element;
 
 - (GTSForm *)form;
 
