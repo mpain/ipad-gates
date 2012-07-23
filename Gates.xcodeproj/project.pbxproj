@@ -91,6 +91,10 @@
 		A54C87F71577CF84002B1116 /* GTSMainSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A54C87F61577CF84002B1116 /* GTSMainSplitViewController.m */; };
 		A54C87FB1577DBBF002B1116 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A54C87F91577DBBE002B1116 /* Localizable.strings */; };
 		A54C87FF1578A597002B1116 /* ProjectForm.json in Resources */ = {isa = PBXBuildFile; fileRef = A54C87FE1578A597002B1116 /* ProjectForm.json */; };
+		A54F98C515BD3E14001E53B2 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = A54F98C415BD3E14001E53B2 /* Default-Portrait@2x~ipad.png */; };
+		A54F98C815BD3E87001E53B2 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = A54F98C715BD3E87001E53B2 /* Default-Portrait~ipad.png */; };
+		A54F98CC15BD3EF9001E53B2 /* igate-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A54F98CB15BD3EF9001E53B2 /* igate-icon.png */; };
+		A54F98CE15BD3EFD001E53B2 /* igate-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A54F98CD15BD3EFD001E53B2 /* igate-icon@2x.png */; };
 		A551612A159334190064E4ED /* GTSPageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5516128159334190064E4ED /* GTSPageScrollView.m */; };
 		A55C7A08157CA41A000D834F /* GTSFormatters.m in Sources */ = {isa = PBXBuildFile; fileRef = A55C7A07157CA41A000D834F /* GTSFormatters.m */; };
 		A55C7A18157CA762000D834F /* GMGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = A55C7A0E157CA762000D834F /* GMGridView.m */; };
@@ -315,6 +319,10 @@
 		A54C87FA1577DBBE002B1116 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A54C87FC1577DBE4002B1116 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A54C87FE1578A597002B1116 /* ProjectForm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ProjectForm.json; path = resources/ProjectForm.json; sourceTree = "<group>"; };
+		A54F98C415BD3E14001E53B2 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait@2x~ipad.png"; path = "../Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		A54F98C715BD3E87001E53B2 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait~ipad.png"; path = "../Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		A54F98CB15BD3EF9001E53B2 /* igate-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "igate-icon.png"; path = "../igate-icon.png"; sourceTree = "<group>"; };
+		A54F98CD15BD3EFD001E53B2 /* igate-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "igate-icon@2x.png"; path = "../igate-icon@2x.png"; sourceTree = "<group>"; };
 		A5516128159334190064E4ED /* GTSPageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSPageScrollView.m; sourceTree = "<group>"; };
 		A5516129159334190064E4ED /* GTSPageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSPageScrollView.h; sourceTree = "<group>"; };
 		A55C7A06157CA41A000D834F /* GTSFormatters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSFormatters.h; sourceTree = "<group>"; };
@@ -485,6 +493,7 @@
 		A50EBAE915764C1C00BD9C60 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A54F98CF15BD420A001E53B2 /* Icons */,
 				A50EBAEA15764C1C00BD9C60 /* Gates-Info.plist */,
 				A50EBAEB15764C1C00BD9C60 /* InfoPlist.strings */,
 				A50EBAEE15764C1C00BD9C60 /* main.m */,
@@ -701,6 +710,17 @@
 				A55C7A3B157CBDCA000D834F /* CalculatorView.xib */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		A54F98CF15BD420A001E53B2 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				A54F98CD15BD3EFD001E53B2 /* igate-icon@2x.png */,
+				A54F98CB15BD3EF9001E53B2 /* igate-icon.png */,
+				A54F98C715BD3E87001E53B2 /* Default-Portrait~ipad.png */,
+				A54F98C415BD3E14001E53B2 /* Default-Portrait@2x~ipad.png */,
+			);
+			name = Icons;
 			sourceTree = "<group>";
 		};
 		A5516126159334060064E4ED /* PageScroller */ = {
@@ -992,6 +1012,10 @@
 				A5A2FCF4159B51050034E158 /* arrow-down@2x.png in Resources */,
 				A5A2FCF8159B5A200034E158 /* edit-background.png in Resources */,
 				A5A2FCF9159B5A200034E158 /* edit-background@2x.png in Resources */,
+				A54F98C515BD3E14001E53B2 /* Default-Portrait@2x~ipad.png in Resources */,
+				A54F98C815BD3E87001E53B2 /* Default-Portrait~ipad.png in Resources */,
+				A54F98CC15BD3EF9001E53B2 /* igate-icon.png in Resources */,
+				A54F98CE15BD3EFD001E53B2 /* igate-icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
