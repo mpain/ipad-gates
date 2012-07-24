@@ -1,13 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1171" systemVersion="11E53" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Catalog" syncable="YES"/>
-    <entity name="Project" syncable="YES"/>
-    <entity name="ProjectType">
-        <attribute name="timeStamp" optional="YES" attributeType="Date"/>
+    <entity name="Catalog" representedClassName="Catalog" syncable="YES">
+        <attribute name="date" attributeType="Date" indexed="YES" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Binary" syncable="YES"/>
+        <relationship name="accessoryEntries" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="CatalogAccessoryEntry" inverseName="catalog" inverseEntity="CatalogAccessoryEntry" syncable="YES"/>
+    </entity>
+    <entity name="CatalogAccessoryEntry" representedClassName="CatalogAccessoryEntry" syncable="YES">
+        <attribute name="area" optional="YES" attributeType="Decimal" defaultValueString="0.0" indexed="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="catalog" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Catalog" inverseName="accessoryEntries" inverseEntity="Catalog" syncable="YES"/>
+    </entity>
+    <entity name="Project" representedClassName="Project" syncable="YES">
+        <attribute name="json" optional="YES" attributeType="Binary" syncable="YES"/>
+        <relationship name="pictures" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ProjectPicture" inverseName="project" inverseEntity="ProjectPicture" syncable="YES"/>
+        <relationship name="type" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="ProjectType" inverseName="projects" inverseEntity="ProjectType" syncable="YES"/>
+    </entity>
+    <entity name="ProjectPicture" representedClassName="ProjectPicture" syncable="YES">
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="project" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Project" inverseName="pictures" inverseEntity="Project" syncable="YES"/>
+    </entity>
+    <entity name="ProjectType" representedClassName="ProjectType" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="projects" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Project" inverseName="type" inverseEntity="Project" syncable="YES"/>
     </entity>
     <elements>
-        <element name="ProjectType" positionX="261" positionY="189" width="128" height="60"/>
-        <element name="Project" positionX="160" positionY="192" width="128" height="45"/>
-        <element name="Catalog" positionX="160" positionY="192" width="128" height="45"/>
+        <element name="Catalog" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="CatalogAccessoryEntry" positionX="-461" positionY="2016" width="128" height="105"/>
+        <element name="Project" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="ProjectPicture" positionX="-414" positionY="369" width="128" height="90"/>
+        <element name="ProjectType" positionX="261" positionY="189" width="128" height="75"/>
     </elements>
 </model>

@@ -6,6 +6,7 @@
 #import "GTSLabelInfoElement.h"
 #import "GTSPickerElement.h"
 #import "GTSBooleanElement.h"
+#import "GTSAppDelegate.h"
 
 @implementation GTSProjectFormEngine {
     __strong GTSNumberElement *gatesWidthElement;
@@ -226,7 +227,9 @@
     if ((element == gatesWidthElement || element == gatesHeightElement) && 
                 (gatesHeightElement.number && gatesWidthElement.number)) {
         NSDecimalNumber *surface = [[gatesWidthElement.number decimalNumberByMultiplyingBy:gatesHeightElement.number] decimalNumberByDividingBy:_oneMillion];
-        gatesSurfaceElement.info = [[[GTSFormatters sharedInstance] floatNumberFormatter] stringFromNumber:surface];
+		
+		NSNumberFormatter *formatter = ServiceLocator.formatters.floatNumberFormatter;
+        gatesSurfaceElement.info = [formatter stringFromNumber:surface];
         
 		if ([self.delegate respondsToSelector:@selector(reloadAnElement:)]) {
 			[self.delegate reloadAnElement:gatesSurfaceElement];

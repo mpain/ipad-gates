@@ -7,3 +7,4 @@ xcuserdata/
 *.xcodeproj/project.xcworkspace/xcuserdata/
 *.xcuserstate
 build
+.idea

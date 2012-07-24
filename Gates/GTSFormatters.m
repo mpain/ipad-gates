@@ -7,19 +7,12 @@
 #define FORMATTER_DECIMAL_SEPARATOR @","
 #define FORMATTER_GROUPING_SEPARATOR @" "
 
+#define FORMATTER_DATETIME_FORMAT @"yyyy-MM-dd HH:mm"
+
 @implementation GTSFormatters
 
 @synthesize floatNumberFormatter;
-
-+ (GTSFormatters *)sharedInstance {
-    static dispatch_once_t once;
-    __strong static id _sharedInstance = nil;
-    dispatch_once(&once, ^{
-        _sharedInstance = [[self alloc] init];
-    });
-    
-    return _sharedInstance;
-}
+@synthesize dateFormatter;
 
 - (id) init {
 	self = [super init];
@@ -33,6 +26,8 @@
 		floatNumberFormatter.decimalSeparator = FORMATTER_DECIMAL_SEPARATOR;
 		floatNumberFormatter.groupingSeparator = FORMATTER_GROUPING_SEPARATOR;
 		
+		dateFormatter = [[NSDateFormatter alloc] init];
+		[dateFormatter setDateFormat:FORMATTER_DATETIME_FORMAT];
 	}
 	return self;
 }

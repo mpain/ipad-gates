@@ -1,0 +1,264 @@
+{
+    "date": "2012-01-01 12:00",
+    "table": {
+        "height": {
+            "start": 1800,
+            "step": 100
+        },
+        "width": {
+            "start": 2000,
+            "step": 100
+        },
+        "entries": [
+            [383, 399, 412, 427, 440, 455, 467, 482, 494, 511, 526],
+            [401, 418, 431, 444, 459, 475, 488, 501, 515, 529, 543],
+            [421, 436, 450, 462, 478, 493, 507, 520, 534, 548, 562],
+            [439, 455, 467, 482, 496, 511, 527, 539, 555, 569, 583],
+            [455, 467, 483, 499, 513, 528, 545, 558, 575, 590, 606],
+            [466, 482, 499, 515, 529, 548, 562, 577, 596, 611, 627],
+            [485, 501, 517, 532, 548, 567, 581, 597, 616, 633, 647],
+            [499, 516, 532, 548, 567, 582, 598, 617, 637, 653, 670],
+            [508, 527, 546, 565, 581, 600, 619, 638, 657, 673, 692],
+            [527, 546, 565, 581, 600, 619, 638, 657, 674, 693, 714]
+        ]
+    },
+
+    "options": [
+        {
+            "type": "YLOCK01",
+            "price": 50.87
+        },
+        {
+            "type": "YLOCK02",
+            "price": 59.64
+        },
+        {
+            "type": "DH25131",
+            "price": 4.32
+        },
+        {
+            "type": "DH25132",
+            "price": 5.02
+        },
+        {
+            "type": "DH85602",
+            "price": 53.55
+        },
+        {
+            "type": "DH85603",
+            "price": 57.12
+        },
+        {
+            "type": "FP03",
+            "price": 105.0
+        },
+
+        {
+            "type": "SP31",
+            "factor": 0.05
+        },
+
+        {
+            "type": "NC11",
+            "factor": 0.1
+        },
+        {
+            "type": "NC12",
+            "factor": 0.1
+        },
+        {
+            "type": "NC17",
+            "factor": 0.04
+        },
+        {
+            "type": "NC18",
+            "factor": 0.04
+        },
+        {
+            "type": "NC19",
+            "factor": 0.04
+        },
+        {
+            "type": "NC20",
+            "factor": 0.04
+        },
+        {
+            "type": "NC21",
+            "factor": 0.04
+        },
+        {
+            "type": "SP38",
+            "factor": 0.06
+        },
+        {
+            "type": "DH85626",
+            "price": 48.79
+        },
+        {
+            "type": "DH85631",
+            "price": 48.79
+        },
+        {
+            "type": "DH85627",
+            "price": 64.26
+        },
+        {
+            "type": "DH85628",
+            "price": 48.79
+        },
+        {
+            "type": "DH85629",
+            "price": 48.79
+        },
+        {
+            "type": "DH85630",
+            "price": 48.79
+        },
+        {
+            "type": "DH-WR360K",
+            "price": 58.30
+        },
+        {
+            "type": "SE-500KIT",
+            "price": 92.59,
+            "area": 8
+        },
+        {
+            "type": "SE-750KIT",
+            "price": 113.39,
+            "area": 10
+        },
+        {
+            "type": "FA-500KIT",
+            "price": 144.60,
+            "area": 10
+        },
+        {
+            "type": "SE-1200KIT",
+            "price": 139.40,
+            "area": 16
+        },
+        {
+            "type": "SK-3600",
+            "price": 28.09
+        },
+        {
+            "type": "SK-4600",
+            "price": 36.41
+        },
+        {
+            "type": "SECTIONAL-750",
+            "price": 85.30
+        },
+        {
+            "type": "SECTIONAL-1200",
+            "price": 102.99
+        },
+        {
+            "type": "D600KIT",
+            "price": 148.7
+        },
+        {
+            "type": "D1000KIT",
+            "price": 208.8
+        },
+        {
+            "type": "DHRE-2",
+            "price": 17.17
+        },
+        {
+            "type": "PHOTOCELL-N",
+            "price": 16.13
+        },
+        {
+            "type": "LAMP",
+            "price": 15.29
+        },
+        {
+            "type": "ARM",
+            "price": 1.45
+        },
+        {
+            "type": "TRANSCHAIN 1:1",
+            "price": 31.21
+        },
+        {
+            "type": "TRANSCHAIN 1:1,5",
+            "price": 32.88
+        },
+        {
+            "type": "LOCK",
+            "price": 14.19
+        },
+        {
+            "type": "LOCK N",
+            "price": 19.14
+        },
+        {
+            "type": "Transmitter 4",
+            "price": 10.19
+        },
+        {
+            "type": "Receiver 433",
+            "price": 12.8
+        },
+        {
+            "type": "SWB",
+            "price": 4.20
+        },
+        {
+            "type": "SWH",
+            "price": 3.60
+        },
+        {
+            "type": "HCHAIN",
+            "price": 3.03
+        },
+        {
+            "type": "SHCHAIN",
+            "price": 4.02
+        },
+        {
+            "type": "DHCHAIN",
+            "price": 3.12
+        },
+        {
+            "type": "INSTALLATION868KIT",
+            "price": 94.65
+        },
+        {
+            "type": "TX2 868 SLH DL",
+            "price": 17.06
+        },
+        {
+            "type": "TX4 868 SLH DL",
+            "price": 19.19
+        },
+        {
+            "type": "T10E",
+            "price": 11.56
+        },
+        {
+            "type": "XR2 868",
+            "price": 32.02
+        },
+        {
+            "type": "SAFEBEAM",
+            "price": 28.00
+        },
+        {
+            "type": "FAACLIGHT",
+            "price": 14.56
+        },
+        {
+            "type": "XT2 868SLH",
+            "price": 17.06
+        },
+        {
+            "type": "XT4 868SLH",
+            "price": 19.19
+        }
+    ]
+
+
+}

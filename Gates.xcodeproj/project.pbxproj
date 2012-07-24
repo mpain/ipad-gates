@@ -79,6 +79,13 @@
 		A5358579157BD688005FB7BC /* GTSLabelInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A5358578157BD688005FB7BC /* GTSLabelInfoCell.m */; };
 		A535857C157BDA17005FB7BC /* GTSLabelInfoElement.m in Sources */ = {isa = PBXBuildFile; fileRef = A535857B157BDA16005FB7BC /* GTSLabelInfoElement.m */; };
 		A535857F157BE243005FB7BC /* GTSEditableElement.m in Sources */ = {isa = PBXBuildFile; fileRef = A535857E157BE242005FB7BC /* GTSEditableElement.m */; };
+		A537931815BEA35A00480BBE /* Catalog.m in Sources */ = {isa = PBXBuildFile; fileRef = A537931715BEA35A00480BBE /* Catalog.m */; };
+		A537931B15BEA35B00480BBE /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = A537931A15BEA35B00480BBE /* Project.m */; };
+		A537931E15BEA35B00480BBE /* CatalogAccessoryEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = A537931D15BEA35B00480BBE /* CatalogAccessoryEntry.m */; };
+		A537932115BEA35B00480BBE /* ProjectType.m in Sources */ = {isa = PBXBuildFile; fileRef = A537932015BEA35B00480BBE /* ProjectType.m */; };
+		A537932415BEA35B00480BBE /* ProjectPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = A537932315BEA35B00480BBE /* ProjectPicture.m */; };
+		A537932715BEA35C00480BBE /* CatalogPriceEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = A537932615BEA35C00480BBE /* CatalogPriceEntry.m */; };
+		A537932915BEA49400480BBE /* catalog.json in Resources */ = {isa = PBXBuildFile; fileRef = A537932815BEA49400480BBE /* catalog.json */; };
 		A53E816F159050550054022F /* GTSColors.m in Sources */ = {isa = PBXBuildFile; fileRef = A53E816E159050550054022F /* GTSColors.m */; };
 		A53E817215905ADB0054022F /* GTSFormHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A53E817115905AD90054022F /* GTSFormHeaderView.m */; };
 		A53E817915907A370054022F /* GTSPickerElement.m in Sources */ = {isa = PBXBuildFile; fileRef = A53E817815907A340054022F /* GTSPickerElement.m */; };
@@ -132,6 +139,11 @@
 		A56D6FE81578B96F00D01627 /* GTSProjectDialogController.m in Sources */ = {isa = PBXBuildFile; fileRef = A56D6FE71578B96F00D01627 /* GTSProjectDialogController.m */; };
 		A56D6FEA1578DFF500D01627 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56D6FEB1578DFF500D01627 /* MainStoryboard.storyboard */; };
 		A56D6FF115790EE000D01627 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56D6FF015790EDE00D01627 /* MobileCoreServices.framework */; };
+		A5705F4015BEC625007014AA /* GTSDebugDataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = A5705F3F15BEC625007014AA /* GTSDebugDataLoader.m */; };
+		A5705F4415BEC69A007014AA /* GTSServiceLocator.m in Sources */ = {isa = PBXBuildFile; fileRef = A5705F4315BEC69A007014AA /* GTSServiceLocator.m */; };
+		A5705F4815BEE278007014AA /* GTSCatalog.m in Sources */ = {isa = PBXBuildFile; fileRef = A5705F4715BEE278007014AA /* GTSCatalog.m */; };
+		A5705F4B15BEEA7A007014AA /* GTSCatalogOption.m in Sources */ = {isa = PBXBuildFile; fileRef = A5705F4A15BEEA7A007014AA /* GTSCatalogOption.m */; };
+		A5705F4F15BEF1DF007014AA /* NSDictionary+LoadValues.m in Sources */ = {isa = PBXBuildFile; fileRef = A5705F4E15BEF1DF007014AA /* NSDictionary+LoadValues.m */; };
 		A58682F1159495860048EE9E /* GTSPdfViewContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = A58682F0159495860048EE9E /* GTSPdfViewContainer.m */; };
 		A5A2FCF1159B51050034E158 /* arrow-up.png in Resources */ = {isa = PBXBuildFile; fileRef = A5A2FCED159B51050034E158 /* arrow-up.png */; };
 		A5A2FCF2159B51050034E158 /* arrow-up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5A2FCEE159B51050034E158 /* arrow-up@2x.png */; };
@@ -150,6 +162,8 @@
 		A5DDA66C159B26EA003EE06A /* history@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5DDA668159B26EA003EE06A /* history@2x.png */; };
 		A5DDA66D159B26EA003EE06A /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = A5DDA669159B26EA003EE06A /* menu.png */; };
 		A5DDA66E159B26EA003EE06A /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5DDA66A159B26EA003EE06A /* menu@2x.png */; };
+		A5DDA66E159B26EA003EE06C /* GTSPriceTable.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DDA66E159B26EA003EE06B /* GTSPriceTable.m */; };
+		A5DDA66E159B26EA003EE06F /* GTSDimention.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DDA66E159B26EA003EE06E /* GTSDimention.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -296,6 +310,19 @@
 		A535857B157BDA16005FB7BC /* GTSLabelInfoElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSLabelInfoElement.m; sourceTree = "<group>"; };
 		A535857D157BE241005FB7BC /* GTSEditableElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSEditableElement.h; sourceTree = "<group>"; };
 		A535857E157BE242005FB7BC /* GTSEditableElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSEditableElement.m; sourceTree = "<group>"; };
+		A537931615BEA35A00480BBE /* Catalog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Catalog.h; path = model/Catalog.h; sourceTree = "<group>"; };
+		A537931715BEA35A00480BBE /* Catalog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Catalog.m; path = model/Catalog.m; sourceTree = "<group>"; };
+		A537931915BEA35B00480BBE /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Project.h; path = model/Project.h; sourceTree = "<group>"; };
+		A537931A15BEA35B00480BBE /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Project.m; path = model/Project.m; sourceTree = "<group>"; };
+		A537931C15BEA35B00480BBE /* CatalogAccessoryEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CatalogAccessoryEntry.h; path = model/CatalogAccessoryEntry.h; sourceTree = "<group>"; };
+		A537931D15BEA35B00480BBE /* CatalogAccessoryEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CatalogAccessoryEntry.m; path = model/CatalogAccessoryEntry.m; sourceTree = "<group>"; };
+		A537931F15BEA35B00480BBE /* ProjectType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProjectType.h; path = model/ProjectType.h; sourceTree = "<group>"; };
+		A537932015BEA35B00480BBE /* ProjectType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProjectType.m; path = model/ProjectType.m; sourceTree = "<group>"; };
+		A537932215BEA35B00480BBE /* ProjectPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProjectPicture.h; path = model/ProjectPicture.h; sourceTree = "<group>"; };
+		A537932315BEA35B00480BBE /* ProjectPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProjectPicture.m; path = model/ProjectPicture.m; sourceTree = "<group>"; };
+		A537932515BEA35C00480BBE /* CatalogPriceEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CatalogPriceEntry.h; path = model/CatalogPriceEntry.h; sourceTree = "<group>"; };
+		A537932615BEA35C00480BBE /* CatalogPriceEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CatalogPriceEntry.m; path = model/CatalogPriceEntry.m; sourceTree = "<group>"; };
+		A537932815BEA49400480BBE /* catalog.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = catalog.json; path = data/catalog.json; sourceTree = "<group>"; };
 		A53E816D159050550054022F /* GTSColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSColors.h; sourceTree = "<group>"; };
 		A53E816E159050550054022F /* GTSColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSColors.m; sourceTree = "<group>"; };
 		A53E817015905AD70054022F /* GTSFormHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSFormHeaderView.h; sourceTree = "<group>"; };
@@ -390,6 +417,17 @@
 		A56D6FE71578B96F00D01627 /* GTSProjectDialogController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSProjectDialogController.m; sourceTree = "<group>"; };
 		A56D6FEB1578DFF500D01627 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		A56D6FF015790EDE00D01627 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A5705F3E15BEC625007014AA /* GTSDebugDataLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSDebugDataLoader.h; sourceTree = "<group>"; };
+		A5705F3F15BEC625007014AA /* GTSDebugDataLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSDebugDataLoader.m; sourceTree = "<group>"; };
+		A5705F4215BEC69A007014AA /* GTSServiceLocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSServiceLocator.h; sourceTree = "<group>"; };
+		A5705F4315BEC69A007014AA /* GTSServiceLocator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSServiceLocator.m; sourceTree = "<group>"; };
+		A5705F4615BEE278007014AA /* GTSCatalog.h */ = {isa = PBXFileReference; fileEncoding = 4; name = GTSCatalog.h; path = vo/GTSCatalog.h; sourceTree = "<group>"; };
+		A5705F4715BEE278007014AA /* GTSCatalog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTSCatalog.m; path = vo/GTSCatalog.m; sourceTree = "<group>"; };
+		A5705F4915BEEA7A007014AA /* GTSCatalogOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSCatalogOption.h; sourceTree = "<group>"; };
+		A5705F4A15BEEA7A007014AA /* GTSCatalogOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSCatalogOption.m; sourceTree = "<group>"; };
+		A5705F4C15BEEABE007014AA /* GTSJsonProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTSJsonProtocol.h; sourceTree = "<group>"; };
+		A5705F4D15BEF1DF007014AA /* NSDictionary+LoadValues.h */ = {isa = PBXFileReference; fileEncoding = 4; path = "NSDictionary+LoadValues.h"; sourceTree = "<group>"; };
+		A5705F4E15BEF1DF007014AA /* NSDictionary+LoadValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+LoadValues.m"; sourceTree = "<group>"; };
 		A58682EF159495860048EE9E /* GTSPdfViewContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSPdfViewContainer.h; sourceTree = "<group>"; };
 		A58682F0159495860048EE9E /* GTSPdfViewContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSPdfViewContainer.m; sourceTree = "<group>"; };
 		A5A2FCED159B51050034E158 /* arrow-up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow-up.png"; path = "resources/images/arrow-up.png"; sourceTree = "<group>"; };
@@ -416,6 +454,10 @@
 		A5DDA668159B26EA003EE06A /* history@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "history@2x.png"; path = "resources/images/history@2x.png"; sourceTree = "<group>"; };
 		A5DDA669159B26EA003EE06A /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu.png; path = resources/images/menu.png; sourceTree = "<group>"; };
 		A5DDA66A159B26EA003EE06A /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu@2x.png"; path = "resources/images/menu@2x.png"; sourceTree = "<group>"; };
+		A5DDA66E159B26EA003EE06B /* GTSPriceTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSPriceTable.m; sourceTree = "<group>"; };
+		A5DDA66E159B26EA003EE06D /* GTSPriceTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSPriceTable.h; sourceTree = "<group>"; };
+		A5DDA66E159B26EA003EE06E /* GTSDimention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSDimention.m; sourceTree = "<group>"; };
+		A5DDA66E159B26EA003EE070 /* GTSDimention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSDimention.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -472,6 +514,8 @@
 		A50EBAE815764C1C00BD9C60 /* Gates */ = {
 			isa = PBXGroup;
 			children = (
+				A5705F4515BEE24C007014AA /* VO */,
+				A537931515BEA21200480BBE /* Model */,
 				A55C7A1D157CA771000D834F /* Temporary */,
 				A55D6099157A581A00DEFCF7 /* Common */,
 				A55D6082157A402900DEFCF7 /* Components */,
@@ -499,6 +543,7 @@
 				A50EBAEE15764C1C00BD9C60 /* main.m */,
 				A50EBAF015764C1C00BD9C60 /* Gates-Prefix.pch */,
 				A54C87F91577DBBE002B1116 /* Localizable.strings */,
+				A537932815BEA49400480BBE /* catalog.json */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -506,6 +551,7 @@
 		A50EBB1215777D8600BD9C60 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				A537932D15BEADB300480BBE /* JsonKit */,
 				A5DDA660159B1274003EE06A /* Jastor */,
 				A55C7A0B157CA753000D834F /* GMGridView */,
 				A50EBBC2157780E200BD9C60 /* SplitView */,
@@ -677,6 +723,32 @@
 				A5358576157BC4C8005FB7BC /* GTSElementDelegate.h */,
 			);
 			name = Delegates;
+			sourceTree = "<group>";
+		};
+		A537931515BEA21200480BBE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A537932515BEA35C00480BBE /* CatalogPriceEntry.h */,
+				A537932615BEA35C00480BBE /* CatalogPriceEntry.m */,
+				A537932215BEA35B00480BBE /* ProjectPicture.h */,
+				A537932315BEA35B00480BBE /* ProjectPicture.m */,
+				A537931F15BEA35B00480BBE /* ProjectType.h */,
+				A537932015BEA35B00480BBE /* ProjectType.m */,
+				A537931C15BEA35B00480BBE /* CatalogAccessoryEntry.h */,
+				A537931D15BEA35B00480BBE /* CatalogAccessoryEntry.m */,
+				A537931915BEA35B00480BBE /* Project.h */,
+				A537931A15BEA35B00480BBE /* Project.m */,
+				A537931615BEA35A00480BBE /* Catalog.h */,
+				A537931715BEA35A00480BBE /* Catalog.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A537932D15BEADB300480BBE /* JsonKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = JsonKit;
 			sourceTree = "<group>";
 		};
 		A53E816B159050170054022F /* Colors */ = {
@@ -908,11 +980,33 @@
 			name = Common;
 			sourceTree = "<group>";
 		};
+		A5705F4515BEE24C007014AA /* VO */ = {
+			isa = PBXGroup;
+			children = (
+				A5DDA66E159B26EA003EE070 /* GTSDimention.h */,
+				A5DDA66E159B26EA003EE06E /* GTSDimention.m */,
+				A5DDA66E159B26EA003EE06D /* GTSPriceTable.h */,
+				A5DDA66E159B26EA003EE06B /* GTSPriceTable.m */,
+				A5705F4615BEE278007014AA /* GTSCatalog.h */,
+				A5705F4715BEE278007014AA /* GTSCatalog.m */,
+				A5705F4915BEEA7A007014AA /* GTSCatalogOption.h */,
+				A5705F4A15BEEA7A007014AA /* GTSCatalogOption.m */,
+				A5705F4C15BEEABE007014AA /* GTSJsonProtocol.h */,
+				A5705F4D15BEF1DF007014AA /* NSDictionary+LoadValues.h */,
+				A5705F4E15BEF1DF007014AA /* NSDictionary+LoadValues.m */,
+			);
+			name = VO;
+			sourceTree = "<group>";
+		};
 		A5DDA658159AF484003EE06A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				A5705F3E15BEC625007014AA /* GTSDebugDataLoader.h */,
+				A5705F3F15BEC625007014AA /* GTSDebugDataLoader.m */,
 				A5DDA65A159AF74F003EE06A /* GTSProjectsService.h */,
 				A5DDA65B159AF74F003EE06A /* GTSProjectsService.m */,
+				A5705F4215BEC69A007014AA /* GTSServiceLocator.h */,
+				A5705F4315BEC69A007014AA /* GTSServiceLocator.m */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -1016,6 +1110,7 @@
 				A54F98C815BD3E87001E53B2 /* Default-Portrait~ipad.png in Resources */,
 				A54F98CC15BD3EF9001E53B2 /* igate-icon.png in Resources */,
 				A54F98CE15BD3EFD001E53B2 /* igate-icon@2x.png in Resources */,
+				A537932915BEA49400480BBE /* catalog.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1135,6 +1230,19 @@
 				A5DDA65F159AFCDE003EE06A /* GTSProject.m in Sources */,
 				A5DDA665159B1281003EE06A /* Jastor.m in Sources */,
 				A5DDA666159B1281003EE06A /* JastorRuntimeHelper.m in Sources */,
+				A537931815BEA35A00480BBE /* Catalog.m in Sources */,
+				A537931B15BEA35B00480BBE /* Project.m in Sources */,
+				A537931E15BEA35B00480BBE /* CatalogAccessoryEntry.m in Sources */,
+				A537932115BEA35B00480BBE /* ProjectType.m in Sources */,
+				A537932415BEA35B00480BBE /* ProjectPicture.m in Sources */,
+				A537932715BEA35C00480BBE /* CatalogPriceEntry.m in Sources */,
+				A5705F4015BEC625007014AA /* GTSDebugDataLoader.m in Sources */,
+				A5705F4415BEC69A007014AA /* GTSServiceLocator.m in Sources */,
+				A5705F4815BEE278007014AA /* GTSCatalog.m in Sources */,
+				A5705F4B15BEEA7A007014AA /* GTSCatalogOption.m in Sources */,
+				A5705F4F15BEF1DF007014AA /* NSDictionary+LoadValues.m in Sources */,
+				A5DDA66E159B26EA003EE06C /* GTSPriceTable.m in Sources */,
+				A5DDA66E159B26EA003EE06F /* GTSDimention.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
